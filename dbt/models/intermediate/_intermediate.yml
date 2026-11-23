@@ -1,0 +1,171 @@
+version: 2
+
+models:
+  - name: int_events_measured
+    description: >
+      SIMULATED. Control-set events classified the way Fingerprint measures accuracy (control = deterministic answer,
+      test = probabilistic answer to the same event): TP, FP, FN, TN. View, filtered by the incremental mart.
+    columns:
+      - name: event_id
+        description: Identifier of the identification request.
+        data_tests: [unique, not_null]
+      - name: event_date
+        description: UTC day.
+      - name: customer_id
+        description: Customer.
+      - name: browser
+        description: Browser family.
+      - name: browser_major
+        description: Major version.
+      - name: os
+        description: Operating system.
+      - name: os_major
+        description: iOS major for Apple mobile traffic.
+      - name: device_type
+        description: desktop, mobile or tablet.
+      - name: is_vpn
+        description: VPN flag.
+      - name: is_bad_bot
+        description: Bad robot flag (excluded from standard rates).
+      - name: bot_result
+        description: Robot detection result.
+      - name: measured_outcome
+        description: TP, FP, FN or TN under Fingerprint's definitions.
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['TP', 'FP', 'FN', 'TN']
+
+  - name: int_events_truth
+    description: SIMULATION ONLY. Every event classified against the hidden true device (TP, FP, FN, TN).
+    columns:
+      - name: event_id
+        description: Identifier of the identification request.
+        data_tests: [unique, not_null]
+      - name: event_date
+        description: UTC day.
+      - name: customer_id
+        description: Customer.
+      - name: browser
+        description: Browser family.
+      - name: browser_major
+        description: Major version.
+      - name: device_type
+        description: Device type.
+      - name: method
+        description: deterministic or probabilistic.
+      - name: is_incognito
+        description: Private browsing.
+      - name: is_bad_bot
+        description: Bad robot flag.
+      - name: true_is_internal_agent
+        description: Hidden flag of C07 agent devices.
+      - name: truth_outcome
+        description: TP, FP, FN or TN against the true device.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['TP', 'FP', 'FN', 'TN']
+
+  - name: int_version_age
+    description: Days since the real first stable release of each browser major version, per day.
+    columns:
+      - name: browser
+        description: Browser family.
+      - name: browser_major
+        description: Major version.
+      - name: event_date
+        description: Day.
+      - name: release_family
+        description: Release calendar used (Chrome, Firefox, iOS) or empty when not modelled.
+      - name: release_date
+        description: Real first stable release date of that version.
+      - name: days_since_release
+        description: event_date - release_date.
+      - name: version_age_bucket
+        description: 0-7 days, 8-28 days, 29-90 days, >90 days or unknown.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['browser', 'browser_major', 'event_date']
+
+  - name: int_linked_id_pairs
+    description: SIMULATED. Account (linkedId) x visitor pairs with counts, first and last time seen, main network.
+    columns:
+      - name: customer_id
+        description: Customer.
+      - name: linked_id
+        description: Account id sent by the customer.
+      - name: visitor_id
+        description: Visitor id returned by the platform.
+      - name: events
+        description: Requests of the pair.
+      - name: first_seen
+        description: First request of the pair.
+      - name: last_seen
+        description: Last request of the pair.
+      - name: bad_bot_events
+        description: Requests of the pair flagged as bad robots.
+      - name: bot_events
+        description: Requests of the pair flagged as robots (good or bad).
+      - name: main_ip_hash
+        description: Most frequent network of the pair (internal use only, never published).
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['customer_id', 'linked_id', 'visitor_id']
+
+  - name: int_internal_traffic
+    description: >
+      SIMULATED. Visitors suspected to be internal traffic (agents): >= 20 accounts and a network shared by >= 5 such
+      visitors. Validated against the hidden truth in the notebook (precision and recall of the rule).
+    columns:
+      - name: customer_id
+        description: Customer.
+      - name: visitor_id
+        description: Visitor id.
+      - name: accounts
+        description: Distinct accounts linked to the visitor.
+      - name: events
+        description: Linked requests of the visitor.
+      - name: bad_bot_events
+        description: Linked requests flagged as bad robots.
+      - name: bot_events
+        description: Linked requests flagged as robots (good or bad); mostly-robot visitors are excluded from the rule.
+      - name: main_ip_hash
+        description: Main network of the visitor (never published).
+      - name: heavy_visitors_on_network
+        description: Visitors with >= 20 accounts on the same network.
+      - name: is_internal_suspected
+        description: Result of the rule.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['customer_id', 'visitor_id']
+
+  - name: int_hits_reid
+    description: >
+      REAL DATA. Re-identification replay (event and visit grain) on the ClickBench sites fully contained in the local
+      files, computed by DuckDB. Compared with ClickHouse in mart_hits_reid_check.
+    columns:
+      - name: counter_id
+        description: Site.
+      - name: grain
+        description: event or visit.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['event', 'visit']
+      - name: n
+        description: Re-identification attempts (events or visits).
+      - name: users
+        description: Distinct UserIDs.
+      - name: tp_n
+        description: Re-identified as the right user.
+      - name: fp_n
+        description: Matched to another existing user.
+      - name: fn_n
+        description: Returning user seen as new.
+      - name: tn_n
+        description: New user seen as new.

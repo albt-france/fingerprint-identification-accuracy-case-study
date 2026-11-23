@@ -1,0 +1,19 @@
+# No secrets here: DuckDB is a local file. Run dbt from this folder with --profiles-dir .
+fingerprint_accuracy:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: fingerprint.duckdb
+      threads: 4
+      settings:
+        memory_limit: "8GB"
+        preserve_insertion_order: false
+    replay:
+      # separate file used by src/incremental_replay.py (day-by-day runs around the pipeline incident)
+      type: duckdb
+      path: fingerprint_replay.duckdb
+      threads: 4
+      settings:
+        memory_limit: "8GB"
+        preserve_insertion_order: false

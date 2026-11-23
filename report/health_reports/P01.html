@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Accuracy health P01</title><style>
+:root { --bg:#f4f1ec; --card:#ffffff; --ink:#1f2328; --muted:#5f6670; --line:#e3ded6; --accent:#2f5d8a;
+        --green:#2e7d4f; --amber:#b7791f; --red:#b83232; --grey:#7a7f87; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:13px/1.45 "Segoe UI", system-ui, sans-serif; }
+.page { max-width:980px; margin:0 auto; padding:22px 26px; }
+h1 { font-size:21px; margin:0 0 2px; } h2 { font-size:14px; margin:0 0 8px; }
+.sub { color:var(--muted); margin-bottom:14px; }
+.tag { display:inline-block; font-size:10px; font-weight:700; letter-spacing:.06em; padding:2px 7px; border-radius:3px;
+       background:#e8e1f5; color:#4b3a78; vertical-align:middle; margin-left:6px; }
+.grid { display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin-bottom:12px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:12px 14px; margin-bottom:12px; }
+.kpi .v { font-size:20px; font-weight:700; } .kpi .l { color:var(--muted); font-size:11px; }
+.badge { display:inline-block; padding:4px 12px; border-radius:14px; color:#fff; font-weight:700; text-transform:uppercase; font-size:12px; }
+.green { background:var(--green); } .amber { background:var(--amber); } .red { background:var(--red); } .grey { background:var(--grey); }
+table { border-collapse:collapse; width:100%; font-size:12px; }
+th, td { text-align:left; padding:4px 6px; border-bottom:1px solid var(--line); } th { color:var(--muted); font-weight:600; }
+td.n, th.n { text-align:right; }
+.foot { color:var(--muted); font-size:10.5px; margin-top:10px; }
+.two { display:grid; grid-template-columns:1.25fr 1fr; gap:12px; }
+@media print { body { background:#fff; } .page { padding:0; } .card { break-inside:avoid; } }
+@media (max-width:700px) { .grid { grid-template-columns:1fr 1fr; } .two { grid-template-columns:1fr; } }
+</style></head><body><div class="page">
+<h1>Accuracy health report · P01 <span class="tag">SIMULATED</span></h1>
+<div class="sub">Fintech (prospect) · Account takeover (POC) · POD-A · confidence threshold 0.95 ·
+week of 2026-11-16 · fictional customer of a simulated identification platform</div>
+<div class="card"><span class="badge green">green</span>
+&nbsp; <b>No accuracy change, no robot or incognito alert, no urgent request.</b>
+<div style="margin-top:8px">The false-positive rate is stable (0.00% then 0.78%): the difference is within normal noise. The false-negative rate is stable (0.00% then 2.56%): the difference is within normal noise.</div>
+<div style="margin-top:8px"><b>Analyst note.</b> Between 2026-11-05 and 2026-11-12, bad robots made up 41% of your requests (usual level 2.5%). They explain the jump of visitors per account (2.53 with robots, 1.52 without). With flagged robots removed the false-negative rate is still 4.1% (other weeks 1.8%): the excess comes from robots that were not flagged. On genuinely human traffic (known here because the data is simulated) it was 1.6%, against 1.8% in other weeks. We recommend presenting human accuracy and robot detection as two separate results.</div>
+<div class="foot">Status by week (oldest to latest): <span class="badge grey" title="2026-10-19" style="padding:2px 6px;margin-right:2px;font-size:9px">g</span><span class="badge grey" title="2026-10-26" style="padding:2px 6px;margin-right:2px;font-size:9px">g</span><span class="badge red" title="2026-11-02" style="padding:2px 6px;margin-right:2px;font-size:9px">r</span><span class="badge red" title="2026-11-09" style="padding:2px 6px;margin-right:2px;font-size:9px">r</span><span class="badge green" title="2026-11-16" style="padding:2px 6px;margin-right:2px;font-size:9px">g</span></div></div>
+<div class="grid">
+<div class="card kpi"><div class="v">0.78%</div><div class="l">False-positive rate, last 4 weeks<br>95% CI 0.71%-0.85%</div></div>
+<div class="card kpi"><div class="v">2.56%</div><div class="l">False-negative rate, last 4 weeks<br>95% CI 2.45%-2.69%</div></div>
+<div class="card kpi"><div class="v">1.9%</div><div class="l">Answers under your confidence threshold<br>(previous 4 weeks: 33.3%)</div></div>
+<div class="card kpi"><div class="v">18.6%</div><div class="l">Bad-robot share of requests<br>incognito share 4.3%</div></div>
+</div>
+<div class="two"><div class="card"><h2>Weekly error rates with 95% intervals</h2><svg viewBox="0 0 560 190" width="100%" role="img" xmlns="http://www.w3.org/2000/svg"><line x1="44" x2="550" y1="164.0" y2="164.0" stroke="#e3ded6"/><text x="38" y="168.0" font-size="10" text-anchor="end" fill="#5f6670">0.0%</text><line x1="44" x2="550" y1="125.5" y2="125.5" stroke="#e3ded6"/><text x="38" y="129.5" font-size="10" text-anchor="end" fill="#5f6670">22.8%</text><line x1="44" x2="550" y1="87.0" y2="87.0" stroke="#e3ded6"/><text x="38" y="91.0" font-size="10" text-anchor="end" fill="#5f6670">45.6%</text><line x1="44" x2="550" y1="48.5" y2="48.5" stroke="#e3ded6"/><text x="38" y="52.5" font-size="10" text-anchor="end" fill="#5f6670">68.4%</text><line x1="44" x2="550" y1="10.0" y2="10.0" stroke="#e3ded6"/><text x="38" y="14.0" font-size="10" text-anchor="end" fill="#5f6670">91.2%</text><polygon points="44.0,30.1 170.5,162.5 297.0,162.5 423.5,162.4 550.0,162.4 550.0,162.9 423.5,162.8 297.0,163.0 170.5,163.0 44.0,164.0" fill="#b83232" opacity="0.15"/><polyline fill="none" stroke-width="2" stroke="#b83232" points="44.0,164.0 170.5,162.7 297.0,162.8 423.5,162.6 550.0,162.7"/><polygon points="44.0,30.1 170.5,160.6 297.0,158.6 423.5,157.8 550.0,160.5 550.0,161.2 423.5,158.6 297.0,159.5 170.5,161.3 44.0,164.0" fill="#2f5d8a" opacity="0.15"/><polyline fill="none" stroke-width="2" stroke="#2f5d8a" points="44.0,164.0 170.5,161.0 297.0,159.1 423.5,158.2 550.0,160.8"/><text x="44.0" y="182" font-size="10" text-anchor="middle" fill="#5f6670">10-19</text><text x="170.5" y="182" font-size="10" text-anchor="middle" fill="#5f6670">10-26</text><text x="297.0" y="182" font-size="10" text-anchor="middle" fill="#5f6670">11-02</text><text x="423.5" y="182" font-size="10" text-anchor="middle" fill="#5f6670">11-09</text><text x="550.0" y="182" font-size="10" text-anchor="middle" fill="#5f6670">11-16</text><rect x="50" y="10" width="10" height="3" fill="#b83232"/><text x="64" y="15" font-size="10" fill="#1f2328">False-positive rate</text><rect x="191.5" y="10" width="10" height="3" fill="#2f5d8a"/><text x="205.5" y="15" font-size="10" fill="#1f2328">False-negative rate</text></svg></div>
+<div class="card"><h2>By browser, last 4 weeks</h2><table><tr><th>Browser</th><th class='n'>Control events</th><th class='n'>FP rate</th><th class='n'>FN rate</th></tr><tr><td>Native iOS</td><td class='n'>15,171</td><td class='n'>0.18%</td><td class='n'>0.47%</td></tr><tr><td>Chrome Mobile</td><td class='n'>11,819</td><td class='n'>0.98%</td><td class='n'>2.53%</td></tr><tr><td>Chrome</td><td class='n'>11,135</td><td class='n'>0.53%</td><td class='n'>6.93%</td></tr><tr><td>Native Android</td><td class='n'>10,464</td><td class='n'>0.16%</td><td class='n'>0.40%</td></tr><tr><td>Mobile Safari</td><td class='n'>9,851</td><td class='n'>2.41%</td><td class='n'>3.11%</td></tr><tr><td>Edge</td><td class='n'>3,518</td><td class='n'>0.43%</td><td class='n'>1.88%</td></tr><tr><td>Firefox</td><td class='n'>1,932</td><td class='n'>0.83%</td><td class='n'>3.11%</td></tr><tr><td>Samsung Internet</td><td class='n'>1,767</td><td class='n'>1.36%</td><td class='n'>2.89%</td></tr><tr><td>Safari</td><td class='n'>1,527</td><td class='n'>0.72%</td><td class='n'>3.60%</td></tr></table>
+<div class="foot">Browsers with fewer than 200 control events are hidden (too few to read a rate).</div></div></div>
+<div class="card"><h2>Your own accounts (customer-specific metrics from linkedId)</h2>
+        <table><tr><th>Scope</th><th class='n'>Accounts per visitor (mean / 99th pct / max)</th><th class='n'>Visitors per account (mean / 99th pct)</th></tr>
+        <tr><td>all</td><td class='n'>1.63 / 47 / 84</td><td class='n'>2.95 / 8</td></tr><tr><td>excl bad bots</td><td class='n'>1.12 / 5 / 14</td><td class='n'>1.85 / 5</td></tr><tr><td>excl internal and bots</td><td class='n'>1.12 / 5 / 14</td><td class='n'>1.85 / 5</td></tr>
+        </table><div class="foot">"Internal" = visitors linked to 20+ accounts on a network shared by 5+ such visitors (support or call-centre agents).</div></div>
+<div class="card"><h2>Recent requests about this customer</h2><table><tr><th>Id</th><th>Request</th><th>Priority</th><th>Opened</th><th>State</th></tr><tr><td>REQ-124</td><td>POC: visitors per account exploded this week, is identification failing?</td><td>P1</td><td>2026-11-10 00:00:00</td><td>resolved</td></tr><tr><td>REQ-123</td><td>Poc report</td><td>P2</td><td>2026-11-09 00:00:00</td><td>resolved</td></tr><tr><td>REQ-122</td><td>Poc report</td><td>P2</td><td>2026-11-09 00:00:00</td><td>resolved</td></tr><tr><td>REQ-114</td><td>Poc report</td><td>P2</td><td>2026-11-03 00:00:00</td><td>resolved</td></tr><tr><td>REQ-096</td><td>Poc report</td><td>P1</td><td>2026-10-26 00:00:00</td><td>resolved</td></tr></table></div>
+<div class="foot"><b>Definitions.</b> Measured like Fingerprint documents it: events identified with a deterministic signal (control set) are
+re-identified without it. <b>False positive</b>: recognised as another existing visitor (two people merged). <b>False negative</b>: a returning
+visitor treated as new (one person split). Rates exclude requests flagged as bad robots. The confidence score is 1 minus the estimated probability
+of a false positive. Intervals: Wilson 95%. "Real change" = two-period test with over-dispersion 1.3, p &lt; 0.01.
+Private-browsing traffic cannot be measured this way, so the measured rates are optimistic when its share grows.<br>Independent case study based on public data · not affiliated with or endorsed by Fingerprint</div>
+</div></body></html>

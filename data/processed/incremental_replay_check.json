@@ -1,0 +1,37 @@
+{
+  "2026-10-25": {
+    "incremental_after_last_run": 197193,
+    "full_build": 197193,
+    "naive_pipeline": 197193
+  },
+  "2026-10-26": {
+    "incremental_after_last_run": 239661,
+    "full_build": 239661,
+    "naive_pipeline": 239661
+  },
+  "2026-10-27": {
+    "incremental_after_last_run": 240233,
+    "full_build": 240233,
+    "naive_pipeline": 245211
+  },
+  "2026-10-28": {
+    "incremental_after_last_run": 233811,
+    "full_build": 233811,
+    "naive_pipeline": 0
+  },
+  "2026-10-29": {
+    "incremental_after_last_run": 233983,
+    "full_build": 233983,
+    "naive_pipeline": 233983
+  },
+  "2026-10-30": {
+    "incremental_after_last_run": 226990,
+    "full_build": 226990,
+    "naive_pipeline": 226990
+  },
+  "2026-10-31": {
+    "incremental_after_last_run": 199146,
+    "full_build": 199146,
+    "naive_pipeline": 199146
+  }
+}

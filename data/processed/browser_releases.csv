@@ -1,0 +1,211 @@
+browser,major,release_date,first_stable_build,source
+Chrome,146,2026-03-05,146.0.7680.65,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,147,2026-03-25,147.0.7727.24,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,148,2026-04-23,148.0.7778.56,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,149,2026-05-20,149.0.7827.22,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,150,2026-06-17,150.0.7871.24,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,151,2026-07-15,151.0.7922.34,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,152,2026-08-12,152.0.7977.42,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,153,2026-08-26,153.0.8010.12,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,154,2026-09-09,154.0.8037.17,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,155,2026-09-23,155.0.8059.12,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,156,2026-10-07,156.0.8078.12,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,157,2026-10-22,157.0.8103.15,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,158,2026-11-04,158.0.8127.18,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Chrome,159,2026-11-18,159.0.8154.13,"chromiumdash.appspot.com fetch_releases (Stable, Windows)"
+Firefox,1,2004-11-09,1.0,product-details.mozilla.org
+Firefox,1,2005-11-29,1.5,product-details.mozilla.org
+Firefox,2,2006-10-24,2.0,product-details.mozilla.org
+Firefox,3,2008-06-17,3.0,product-details.mozilla.org
+Firefox,3,2009-06-30,3.5,product-details.mozilla.org
+Firefox,3,2010-01-21,3.6,product-details.mozilla.org
+Firefox,4,2011-03-22,4.0,product-details.mozilla.org
+Firefox,5,2011-06-21,5.0,product-details.mozilla.org
+Firefox,6,2011-08-16,6.0,product-details.mozilla.org
+Firefox,7,2011-09-27,7.0,product-details.mozilla.org
+Firefox,8,2011-11-08,8.0,product-details.mozilla.org
+Firefox,9,2011-12-20,9.0,product-details.mozilla.org
+Firefox,10,2012-01-31,10.0,product-details.mozilla.org
+Firefox,11,2012-03-13,11.0,product-details.mozilla.org
+Firefox,12,2012-04-24,12.0,product-details.mozilla.org
+Firefox,13,2012-06-05,13.0,product-details.mozilla.org
+Firefox,14,2012-07-17,14.0.1,product-details.mozilla.org
+Firefox,15,2012-08-28,15.0,product-details.mozilla.org
+Firefox,16,2012-10-09,16.0,product-details.mozilla.org
+Firefox,17,2012-11-20,17.0,product-details.mozilla.org
+Firefox,18,2013-01-08,18.0,product-details.mozilla.org
+Firefox,19,2013-02-19,19.0,product-details.mozilla.org
+Firefox,20,2013-04-02,20.0,product-details.mozilla.org
+Firefox,21,2013-05-14,21.0,product-details.mozilla.org
+Firefox,22,2013-06-25,22.0,product-details.mozilla.org
+Firefox,23,2013-08-06,23.0,product-details.mozilla.org
+Firefox,24,2013-09-17,24.0,product-details.mozilla.org
+Firefox,25,2013-10-29,25.0,product-details.mozilla.org
+Firefox,26,2013-12-10,26.0,product-details.mozilla.org
+Firefox,27,2014-02-04,27.0,product-details.mozilla.org
+Firefox,28,2014-03-18,28.0,product-details.mozilla.org
+Firefox,29,2014-04-29,29.0,product-details.mozilla.org
+Firefox,30,2014-06-10,30.0,product-details.mozilla.org
+Firefox,31,2014-07-22,31.0,product-details.mozilla.org
+Firefox,32,2014-09-02,32.0,product-details.mozilla.org
+Firefox,33,2014-10-14,33.0,product-details.mozilla.org
+Firefox,33,2014-11-10,33.1,product-details.mozilla.org
+Firefox,34,2014-12-01,34.0,product-details.mozilla.org
+Firefox,35,2015-01-13,35.0,product-details.mozilla.org
+Firefox,36,2015-02-24,36.0,product-details.mozilla.org
+Firefox,37,2015-03-31,37.0,product-details.mozilla.org
+Firefox,38,2015-05-12,38.0,product-details.mozilla.org
+Firefox,39,2015-07-02,39.0,product-details.mozilla.org
+Firefox,40,2015-08-11,40.0,product-details.mozilla.org
+Firefox,41,2015-09-22,41.0,product-details.mozilla.org
+Firefox,42,2015-11-03,42.0,product-details.mozilla.org
+Firefox,43,2015-12-15,43.0,product-details.mozilla.org
+Firefox,44,2016-01-26,44.0,product-details.mozilla.org
+Firefox,45,2016-03-08,45.0,product-details.mozilla.org
+Firefox,46,2016-04-26,46.0,product-details.mozilla.org
+Firefox,47,2016-06-07,47.0,product-details.mozilla.org
+Firefox,48,2016-08-02,48.0,product-details.mozilla.org
+Firefox,49,2016-09-20,49.0,product-details.mozilla.org
+Firefox,50,2016-11-15,50.0,product-details.mozilla.org
+Firefox,51,2017-01-24,51.0,product-details.mozilla.org
+Firefox,52,2017-03-07,52.0,product-details.mozilla.org
+Firefox,53,2017-04-19,53.0,product-details.mozilla.org
+Firefox,54,2017-06-13,54.0,product-details.mozilla.org
+Firefox,55,2017-08-08,55.0,product-details.mozilla.org
+Firefox,56,2017-09-28,56.0,product-details.mozilla.org
+Firefox,57,2017-11-14,57.0,product-details.mozilla.org
+Firefox,58,2018-01-23,58.0,product-details.mozilla.org
+Firefox,59,2018-03-13,59.0,product-details.mozilla.org
+Firefox,60,2018-05-09,60.0,product-details.mozilla.org
+Firefox,61,2018-06-26,61.0,product-details.mozilla.org
+Firefox,62,2018-09-05,62.0,product-details.mozilla.org
+Firefox,63,2018-10-23,63.0,product-details.mozilla.org
+Firefox,64,2018-12-11,64.0,product-details.mozilla.org
+Firefox,65,2019-01-29,65.0,product-details.mozilla.org
+Firefox,66,2019-03-19,66.0,product-details.mozilla.org
+Firefox,67,2019-05-21,67.0,product-details.mozilla.org
+Firefox,68,2019-07-09,68.0,product-details.mozilla.org
+Firefox,69,2019-09-03,69.0,product-details.mozilla.org
+Firefox,70,2019-10-22,70.0,product-details.mozilla.org
+Firefox,71,2019-12-03,71.0,product-details.mozilla.org
+Firefox,72,2020-01-07,72.0,product-details.mozilla.org
+Firefox,73,2020-02-11,73.0,product-details.mozilla.org
+Firefox,74,2020-03-10,74.0,product-details.mozilla.org
+Firefox,75,2020-04-07,75.0,product-details.mozilla.org
+Firefox,76,2020-05-05,76.0,product-details.mozilla.org
+Firefox,77,2020-06-02,77.0,product-details.mozilla.org
+Firefox,78,2020-06-30,78.0,product-details.mozilla.org
+Firefox,79,2020-07-28,79.0,product-details.mozilla.org
+Firefox,80,2020-08-25,80.0,product-details.mozilla.org
+Firefox,81,2020-09-22,81.0,product-details.mozilla.org
+Firefox,82,2020-10-20,82.0,product-details.mozilla.org
+Firefox,83,2020-11-17,83.0,product-details.mozilla.org
+Firefox,84,2020-12-15,84.0,product-details.mozilla.org
+Firefox,85,2021-01-26,85.0,product-details.mozilla.org
+Firefox,86,2021-02-23,86.0,product-details.mozilla.org
+Firefox,87,2021-03-23,87.0,product-details.mozilla.org
+Firefox,88,2021-04-19,88.0,product-details.mozilla.org
+Firefox,89,2021-06-01,89.0,product-details.mozilla.org
+Firefox,90,2021-07-13,90.0,product-details.mozilla.org
+Firefox,91,2021-08-10,91.0,product-details.mozilla.org
+Firefox,92,2021-09-07,92.0,product-details.mozilla.org
+Firefox,93,2021-10-05,93.0,product-details.mozilla.org
+Firefox,94,2021-11-02,94.0,product-details.mozilla.org
+Firefox,95,2021-12-07,95.0,product-details.mozilla.org
+Firefox,96,2022-01-11,96.0,product-details.mozilla.org
+Firefox,97,2022-02-08,97.0,product-details.mozilla.org
+Firefox,98,2022-03-08,98.0,product-details.mozilla.org
+Firefox,99,2022-04-05,99.0,product-details.mozilla.org
+Firefox,100,2022-05-03,100.0,product-details.mozilla.org
+Firefox,101,2022-05-31,101.0,product-details.mozilla.org
+Firefox,102,2022-06-28,102.0,product-details.mozilla.org
+Firefox,103,2022-07-26,103.0,product-details.mozilla.org
+Firefox,104,2022-08-23,104.0,product-details.mozilla.org
+Firefox,105,2022-09-20,105.0,product-details.mozilla.org
+Firefox,106,2022-10-18,106.0,product-details.mozilla.org
+Firefox,107,2022-11-15,107.0,product-details.mozilla.org
+Firefox,108,2022-12-13,108.0,product-details.mozilla.org
+Firefox,109,2023-01-17,109.0,product-details.mozilla.org
+Firefox,110,2023-02-14,110.0,product-details.mozilla.org
+Firefox,111,2023-03-14,111.0,product-details.mozilla.org
+Firefox,112,2023-04-11,112.0,product-details.mozilla.org
+Firefox,113,2023-05-09,113.0,product-details.mozilla.org
+Firefox,114,2023-06-06,114.0,product-details.mozilla.org
+Firefox,115,2023-07-04,115.0,product-details.mozilla.org
+Firefox,116,2023-08-01,116.0,product-details.mozilla.org
+Firefox,117,2023-08-29,117.0,product-details.mozilla.org
+Firefox,118,2023-09-26,118.0,product-details.mozilla.org
+Firefox,119,2023-10-24,119.0,product-details.mozilla.org
+Firefox,120,2023-11-21,120.0,product-details.mozilla.org
+Firefox,121,2023-12-19,121.0,product-details.mozilla.org
+Firefox,122,2024-01-23,122.0,product-details.mozilla.org
+Firefox,123,2024-02-20,123.0,product-details.mozilla.org
+Firefox,124,2024-03-19,124.0,product-details.mozilla.org
+Firefox,125,2024-04-16,125.0.1,product-details.mozilla.org
+Firefox,126,2024-05-14,126.0,product-details.mozilla.org
+Firefox,127,2024-06-11,127.0,product-details.mozilla.org
+Firefox,128,2024-07-09,128.0,product-details.mozilla.org
+Firefox,129,2024-08-06,129.0,product-details.mozilla.org
+Firefox,130,2024-09-03,130.0,product-details.mozilla.org
+Firefox,131,2024-10-01,131.0,product-details.mozilla.org
+Firefox,132,2024-10-29,132.0,product-details.mozilla.org
+Firefox,133,2024-11-26,133.0,product-details.mozilla.org
+Firefox,134,2025-01-07,134.0,product-details.mozilla.org
+Firefox,135,2025-02-04,135.0,product-details.mozilla.org
+Firefox,136,2025-03-04,136.0,product-details.mozilla.org
+Firefox,137,2025-04-01,137.0,product-details.mozilla.org
+Firefox,138,2025-04-29,138.0,product-details.mozilla.org
+Firefox,139,2025-05-27,139.0,product-details.mozilla.org
+Firefox,140,2025-06-24,140.0,product-details.mozilla.org
+Firefox,141,2025-07-22,141.0,product-details.mozilla.org
+Firefox,142,2025-08-19,142.0,product-details.mozilla.org
+Firefox,143,2025-09-16,143.0,product-details.mozilla.org
+Firefox,144,2025-10-14,144.0,product-details.mozilla.org
+Firefox,145,2025-11-11,145.0,product-details.mozilla.org
+Firefox,146,2025-12-09,146.0,product-details.mozilla.org
+Firefox,147,2026-01-13,147.0,product-details.mozilla.org
+Firefox,148,2026-02-24,148.0,product-details.mozilla.org
+Firefox,149,2026-03-24,149.0,product-details.mozilla.org
+Firefox,150,2026-04-21,150.0,product-details.mozilla.org
+Firefox,151,2026-05-19,151.0,product-details.mozilla.org
+Firefox,152,2026-06-16,152.0,product-details.mozilla.org
+Firefox,153,2026-07-21,153.0,product-details.mozilla.org
+Firefox,154,2026-08-18,154.0,product-details.mozilla.org
+Firefox,155,2026-09-01,155.0,product-details.mozilla.org
+Firefox,156,2026-09-15,156.0,product-details.mozilla.org
+Firefox,157,2026-09-29,157.0,product-details.mozilla.org
+Firefox,158,2026-10-13,158.0,product-details.mozilla.org
+Firefox,159,2026-10-27,159.0,product-details.mozilla.org
+Firefox,160,2026-11-10,160.0,product-details.mozilla.org
+iOS,27,2026-09-14,27.0,endoflife.date api v1
+iOS,27,2026-11-09,27.2.1 (latest),endoflife.date api v1 (latest)
+iOS,26,2025-09-15,26.0,endoflife.date api v1
+iOS,26,2026-11-09,26.7.3 (latest),endoflife.date api v1 (latest)
+iOS,18,2024-09-16,18.0,endoflife.date api v1
+iOS,18,2026-11-09,18.7.12 (latest),endoflife.date api v1 (latest)
+iOS,17,2023-09-18,17.0,endoflife.date api v1
+iOS,17,2025-05-13,17.7.7 (latest),endoflife.date api v1 (latest)
+iOS,16,2022-09-12,16.0,endoflife.date api v1
+iOS,16,2026-05-11,16.7.16 (latest),endoflife.date api v1 (latest)
+iOS,15,2021-09-20,15.0,endoflife.date api v1
+iOS,15,2026-05-11,15.8.8 (latest),endoflife.date api v1 (latest)
+iOS,14,2020-09-16,14.0,endoflife.date api v1
+iOS,14,2021-10-26,14.8.1 (latest),endoflife.date api v1 (latest)
+iOS,13,2019-09-19,13.0,endoflife.date api v1
+iOS,13,2020-09-01,13.7 (latest),endoflife.date api v1 (latest)
+iOS,12,2018-09-17,12.0,endoflife.date api v1
+iOS,12,2026-01-26,12.5.8 (latest),endoflife.date api v1 (latest)
+iOS,11,2017-09-19,11.0,endoflife.date api v1
+iOS,11,2018-07-09,11.4.1 (latest),endoflife.date api v1 (latest)
+iOS,10,2016-09-13,10.0,endoflife.date api v1
+iOS,10,2019-07-22,10.3.4 (latest),endoflife.date api v1 (latest)
+iOS,9,2015-09-16,9.0,endoflife.date api v1
+iOS,9,2019-07-22,9.3.6 (latest),endoflife.date api v1 (latest)
+iOS,8,2014-09-17,8.0,endoflife.date api v1
+iOS,8,2015-08-13,8.4.1 (latest),endoflife.date api v1 (latest)
+iOS,7,2013-09-18,7.0,endoflife.date api v1
+iOS,7,2014-06-30,7.1.2 (latest),endoflife.date api v1 (latest)
+iOS,6,2012-09-19,6.0,endoflife.date api v1
+iOS,6,2014-02-21,6.1.6 (latest),endoflife.date api v1 (latest)
+iOS,5,2011-10-12,5.0,endoflife.date api v1
+iOS,5,2012-05-07,5.1.1 (latest),endoflife.date api v1 (latest)

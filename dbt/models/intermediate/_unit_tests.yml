@@ -1,0 +1,49 @@
+version: 2
+
+# dbt unit tests (native since dbt 1.8): fixed input rows -> expected output rows, no warehouse data needed.
+unit_tests:
+  - name: measured_outcome_classification
+    description: >
+      Fingerprint definitions on hand-made cases: same visitor = TP, another existing visitor = FP, returning visitor
+      seen as new = FN, new visitor seen as new = TN, a robot keeps its outcome but stays flagged, and an incognito
+      (probabilistic) event never enters the control set.
+    model: int_events_measured
+    given:
+      - input: ref('stg_identification_events')
+        rows:
+          - {event_id: E1, is_control: true,  is_bad_bot: false, visitor_id: V1, visitor_found: true,  probabilistic_visitor_id: V1, probabilistic_visitor_found: true}
+          - {event_id: E2, is_control: true,  is_bad_bot: false, visitor_id: V2, visitor_found: true,  probabilistic_visitor_id: V9, probabilistic_visitor_found: true}
+          - {event_id: E3, is_control: true,  is_bad_bot: false, visitor_id: V3, visitor_found: true,  probabilistic_visitor_id: V7, probabilistic_visitor_found: false}
+          - {event_id: E4, is_control: true,  is_bad_bot: false, visitor_id: V4, visitor_found: false, probabilistic_visitor_id: V8, probabilistic_visitor_found: false}
+          - {event_id: E5, is_control: true,  is_bad_bot: true,  visitor_id: V5, visitor_found: true,  probabilistic_visitor_id: V6, probabilistic_visitor_found: false}
+          - {event_id: E6, is_control: false, is_bad_bot: false, visitor_id: V6, visitor_found: false, probabilistic_visitor_id: null, probabilistic_visitor_found: null}
+    expect:
+      rows:
+        - {event_id: E1, is_bad_bot: false, measured_outcome: TP}
+        - {event_id: E2, is_bad_bot: false, measured_outcome: FP}
+        - {event_id: E3, is_bad_bot: false, measured_outcome: FN}
+        - {event_id: E4, is_bad_bot: false, measured_outcome: TN}
+        - {event_id: E5, is_bad_bot: true,  measured_outcome: FN}
+
+  - name: truth_outcome_classification
+    description: Against the hidden true device, including an incognito event (probabilistic, wrongly new = FN).
+    model: int_events_truth
+    given:
+      - input: ref('stg_identification_events')
+        rows:
+          - {event_id: E1, visitor_id: V1, visitor_found: true,  method: deterministic, is_incognito: false, is_bad_bot: false}
+          - {event_id: E2, visitor_id: V9, visitor_found: true,  method: probabilistic, is_incognito: false, is_bad_bot: false}
+          - {event_id: E3, visitor_id: V7, visitor_found: false, method: probabilistic, is_incognito: true,  is_bad_bot: false}
+          - {event_id: E4, visitor_id: V4, visitor_found: false, method: probabilistic, is_incognito: false, is_bad_bot: false}
+      - input: ref('stg_device_truth')
+        rows:
+          - {event_id: E1, true_visitor_id: V1, device_seen_before: true}
+          - {event_id: E2, true_visitor_id: V2, device_seen_before: true}
+          - {event_id: E3, true_visitor_id: V3, device_seen_before: true}
+          - {event_id: E4, true_visitor_id: V4, device_seen_before: false}
+    expect:
+      rows:
+        - {event_id: E1, truth_outcome: TP}
+        - {event_id: E2, truth_outcome: FP}
+        - {event_id: E3, truth_outcome: FN}
+        - {event_id: E4, truth_outcome: TN}

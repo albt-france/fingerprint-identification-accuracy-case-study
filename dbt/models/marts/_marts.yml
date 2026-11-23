@@ -1,0 +1,270 @@
+version: 2
+
+models:
+  - name: fct_accuracy_daily
+    description: >
+      SIMULATED. Incremental daily accuracy facts (day x customer x browser x major x device type) with a 3-day
+      lookback window for late data. Measured TP/FP/FN/TN on the control set, bad robots excluded; truth_* columns
+      from the hidden truth (simulation only).
+    columns:
+      - name: event_date
+        description: UTC day.
+        data_tests: [not_null]
+      - name: customer_id
+        description: Customer.
+        data_tests: [not_null]
+      - name: browser
+        description: Browser family.
+      - name: browser_major
+        description: Major version.
+      - name: device_type
+        description: desktop, mobile or tablet.
+      - name: events
+        description: All requests.
+      - name: bad_bot_events
+        description: Requests flagged as bad robots.
+      - name: human_events
+        description: Requests not flagged as bad robots.
+      - name: incognito_events
+        description: Human requests in private browsing.
+      - name: new_visitor_events
+        description: Human requests answered with a new visitor.
+      - name: control_events
+        description: Human deterministic requests = denominator of the measured rates.
+      - name: below_threshold_events
+        description: Human requests with an existing visitor and a confidence under the threshold of the customer.
+      - name: found_events
+        description: Human requests answered with an existing visitor.
+      - name: avg_confidence_probabilistic
+        description: Mean confidence of probabilistic answers with an existing visitor.
+      - name: tp
+        description: Measured true positives.
+      - name: fp
+        description: Measured false positives.
+      - name: fn
+        description: Measured false negatives.
+      - name: tn
+        description: Measured true negatives (new visitors confirmed new).
+      - name: truth_tp
+        description: True positives against the hidden truth (all human requests).
+      - name: truth_fp
+        description: False positives against the hidden truth.
+      - name: truth_fn
+        description: False negatives against the hidden truth.
+      - name: truth_tn
+        description: True negatives against the hidden truth.
+      - name: days_since_release
+        description: Age of the browser version (days since its real release).
+      - name: version_age_bucket
+        description: Age bucket of the browser version.
+      - name: built_at
+        description: "When the row was (re)built, which shows the days the lookback window re-processed."
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['event_date', 'customer_id', 'browser', 'browser_major', 'device_type']
+
+  - name: fct_accuracy_weekly_customer
+    description: SIMULATED. Weekly accuracy per customer with 95% Wilson intervals and traffic-mix shares.
+    columns:
+      - name: week_start
+        description: Monday of the week.
+      - name: customer_id
+        description: Customer.
+      - name: control_events
+        description: Denominator of the measured rates.
+      - name: fp_rate
+        description: Measured FP rate = FP / control events.
+      - name: fp_rate_lo
+        description: Lower bound of the 95% Wilson interval.
+      - name: fp_rate_hi
+        description: Upper bound of the 95% Wilson interval.
+      - name: fn_rate
+        description: Measured FN rate = FN / control events.
+      - name: fn_rate_lo
+        description: Lower bound of the 95% Wilson interval.
+      - name: fn_rate_hi
+        description: Upper bound of the 95% Wilson interval.
+      - name: truth_fp_rate
+        description: FP rate against the hidden truth, all human requests (simulation only).
+      - name: truth_fn_rate
+        description: FN rate against the hidden truth (simulation only).
+      - name: control_share
+        description: Share of human requests in the control set.
+      - name: incognito_share
+        description: Share of human requests in private browsing.
+      - name: bad_bot_share
+        description: Share of requests flagged as bad robots.
+      - name: new_visitor_share
+        description: Share of human requests answered with a new visitor.
+      - name: below_threshold_share
+        description: Share of answers with an existing visitor whose confidence is under the threshold of the customer.
+      - name: days_with_data
+        description: Days of the week with data (partial first and last weeks are flagged in reports).
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['week_start', 'customer_id']
+
+  - name: mart_customer_health
+    description: SIMULATED. Weekly health status per customer (green, amber, red, grey) with the reasons, rules in METRICS.md.
+    columns:
+      - name: week_start
+        description: Monday of the week.
+      - name: customer_id
+        description: Customer.
+      - name: health_status
+        description: green, amber, red or grey (no baseline yet).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['green', 'amber', 'red', 'grey']
+      - name: health_reasons
+        description: Plain-English reasons behind the status.
+      - name: z_fp
+        description: Quasi-binomial z-score of the FP count against the previous 4 weeks.
+      - name: z_fn
+        description: Quasi-binomial z-score of the FN count against the previous 4 weeks.
+      - name: open_requests
+        description: Requests of the customer still open at the end of the week.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['week_start', 'customer_id']
+
+  - name: mart_linked_id_metrics
+    description: SIMULATED. Customer-specific metrics from account ids (accounts per visitor, visitors per account), three scopes.
+    columns:
+      - name: scope
+        description: all, excl_bad_bots or excl_internal_and_bots.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['all', 'excl_bad_bots', 'excl_internal_and_bots']
+      - name: customer_id
+        description: Customer.
+      - name: accounts_per_visitor_p99
+        description: 99th percentile of distinct accounts per visitor.
+      - name: visitors_per_account_p99
+        description: 99th percentile of distinct visitors per account.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['scope', 'customer_id']
+
+  - name: mart_book_of_business
+    description: SIMULATED. Weekly summary per CSM pod (customers, ARR, statuses, changes, open requests).
+    columns:
+      - name: csm_pod
+        description: POD-A, POD-B or POD-C.
+      - name: week_start
+        description: Monday of the week.
+      - name: customers_to_watch
+        description: Customers in red or amber.
+      - name: status_changes
+        description: Status changes since the previous week.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['csm_pod', 'week_start']
+
+  - name: mart_request_queue
+    description: SIMULATED. Request queue with impact x urgency priority, SLA, time to resolve and self-service flag.
+    columns:
+      - name: request_id
+        description: Request.
+        data_tests: [unique, not_null]
+      - name: priority_tier
+        description: P1..P4.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['P1', 'P2', 'P3', 'P4']
+      - name: self_service_possible
+        description: True when a self-service tool answers this kind of question.
+
+  - name: mart_anomaly_candidates
+    description: SIMULATED. First-pass SQL screen (z > 3 against the previous 28 days) per customer x browser x version.
+    columns:
+      - name: event_date
+        description: Day.
+      - name: z_fp
+        description: Quasi-binomial z-score of FP.
+      - name: z_fn
+        description: Quasi-binomial z-score of FN.
+
+  - name: mart_mix_standardized
+    description: SIMULATED. Weekly platform FP and FN rates, crude vs mix-standardized vs stable cohort of customers.
+    columns:
+      - name: week_start
+        description: Monday of the week.
+        data_tests: [unique, not_null]
+      - name: fp_rate_crude
+        description: Naive platform rate.
+      - name: fp_rate_standardized
+        description: Rate at the reference segment mix (direct standardization).
+      - name: fp_rate_stable_cohort
+        description: Rate over customers live during the whole window.
+
+  - name: mart_hits_reid_check
+    description: REAL DATA. DuckDB vs ClickHouse replay results per site and grain (expected difference 0).
+    columns:
+      - name: counter_id
+        description: Site.
+      - name: grain
+        description: event or visit.
+      - name: total_abs_diff
+        description: Sum of absolute differences over every measure.
+
+exposures:
+  - name: accuracy_dashboard
+    label: Accuracy dashboard (HTML, 6 tabs)
+    type: dashboard
+    maturity: medium
+    url: ../dashboard/index.html
+    description: Accuracy monitor, customer health, book of business, investigations, request queue, real ClickHouse replay.
+    depends_on:
+      - ref('fct_accuracy_daily')
+      - ref('mart_customer_health')
+      - ref('mart_book_of_business')
+      - ref('mart_request_queue')
+      - ref('mart_mix_standardized')
+      - ref('mart_hits_reid_check')
+    owner:
+      name: Identification Accuracy analytics
+
+  - name: health_reports
+    label: Customer accuracy health report
+    type: application
+    maturity: medium
+    description: tools/health_report.py, one printable page per customer for Customer Success.
+    depends_on:
+      - ref('mart_customer_health')
+      - ref('fct_accuracy_weekly_customer')
+      - ref('mart_linked_id_metrics')
+    owner:
+      name: Identification Accuracy analytics
+
+  - name: book_of_business_digest
+    label: Weekly book-of-business digest
+    type: application
+    maturity: medium
+    description: tools/book_of_business.py, weekly Markdown and HTML digest per CSM pod (never sent automatically).
+    depends_on:
+      - ref('mart_book_of_business')
+      - ref('mart_customer_health')
+      - ref('mart_request_queue')
+    owner:
+      name: Identification Accuracy analytics
+
+  - name: mcp_server
+    label: Read-only MCP server
+    type: application
+    maturity: low
+    description: tools/mcp_server, five whitelisted read-only tools for any MCP-compatible AI assistant.
+    depends_on:
+      - ref('fct_accuracy_daily')
+      - ref('fct_accuracy_weekly_customer')
+      - ref('mart_customer_health')
+    owner:
+      name: Identification Accuracy analytics

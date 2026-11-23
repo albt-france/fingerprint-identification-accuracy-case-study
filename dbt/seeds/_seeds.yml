@@ -1,0 +1,35 @@
+version: 2
+
+seeds:
+  - name: clickhouse_site_counts
+    description: >
+      REAL aggregate from the ClickHouse playground (clickhouse/analyses/01_profile.sql, statement 01_profile_sites):
+      rows per ClickBench site in the full 100M-row table. Used to keep only the sites fully contained in the
+      local files. Derived from ClickBench (CC BY-NC-SA 4.0).
+    columns:
+      - name: counter_id
+        description: Site (CounterID).
+        data_tests: [unique, not_null]
+      - name: events
+        description: Rows of the site in the full table.
+  - name: clickhouse_reid_reference
+    description: >
+      REAL aggregate from the ClickHouse playground (clickhouse/analyses/11_reconciliation.sql): replay counts per
+      site and grain, reference for the cross-engine reconciliation. Derived from ClickBench (CC BY-NC-SA 4.0).
+    columns:
+      - name: counter_id
+        description: Site.
+      - name: grain
+        description: event or visit.
+      - name: n
+        description: Re-identification attempts.
+      - name: users
+        description: Distinct UserIDs.
+      - name: tp_n
+        description: True positives.
+      - name: fp_n
+        description: False positives.
+      - name: fn_n
+        description: False negatives.
+      - name: tn_n
+        description: True negatives.

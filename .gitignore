@@ -1,0 +1,28 @@
+# environments and secrets
+.venv*/
+.env
+# local working files (never published)
+DECISIONS.md
+HANDOFF*.md
+docs/internal/
+# large or non-redistributable data
+data/raw/
+data/sim/
+data/cache/
+data/_hidden_truth.csv
+# databases and build outputs
+*.duckdb
+*.duckdb.wal
+dbt/target*/
+dbt/logs/
+dbt/dbt_packages/
+logs/
+report/report.html
+report/_print.pdf
+tools/logs/
+bi/superset/_local/
+# caches
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.prefect/

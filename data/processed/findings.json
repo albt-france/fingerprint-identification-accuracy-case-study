@@ -1,0 +1,2439 @@
+{
+ "meta": {
+  "generated_utc": "2026-11-23T13:48:45+00:00",
+  "window": [
+   "2026-08-24",
+   "2026-11-22"
+  ],
+  "seed": 42,
+  "read_on": "2026-11-23"
+ },
+ "fingerprint": {
+  "read_on": "2026-11-23",
+  "job": {
+   "title": "Data Analyst, Identification Accuracy ",
+   "requisition_id": "ENG27-15",
+   "location": "Remote",
+   "department": "Engineering",
+   "first_published": "2026-11-20T14:58:17-05:00",
+   "updated_at": "2026-11-20T15:00:25-05:00",
+   "url": "https://fingerprint.com/careers/jobs/apply/?gh_jid=6266169004",
+   "api": "https://boards-api.greenhouse.io/v1/boards/fingerprint/jobs/6266169004",
+   "requests_per_month_as_stated": "1 billion",
+   "us_salary_range_usd_k": [
+    115,
+    155
+   ],
+   "years_experience_required": "3+",
+   "on_call": true
+  },
+  "careers": {
+   "open_roles": 20,
+   "all_remote": true,
+   "titles": [
+    "Business Operations Associate",
+    "Data Analyst, Identification Accuracy ",
+    "Design Engineer",
+    "Engineering Manager, Automation Intelligence",
+    "Enterprise Account Executive ",
+    "Manager, Customer Success Managers - EMEA",
+    "Senior Data Platform Engineer",
+    "Senior Data Scientist",
+    "Senior Engineer, Identification",
+    "Senior Infrastructure Engineer",
+    "Senior Performance Marketing Manager ",
+    "Senior Recruiter",
+    "Senior Revenue Operations Manager (Marketing Ops)",
+    "Senior Site Reliability Engineer",
+    "Software Architect",
+    "Solutions Engineer - India",
+    "Staff Site Reliability Engineer",
+    "Strategic Customer Success Engineer - US",
+    "Strategic Implementation Engineer - US",
+    "Technical Product Manager, Identification & JS Agent"
+   ]
+  },
+  "oss_repo": {
+   "name": "fingerprintjs/fingerprintjs",
+   "stars": 28790,
+   "forks": 2643,
+   "license": "MIT",
+   "releases": 69,
+   "first_release": "2015-08-02",
+   "latest_release": "v5.3.0",
+   "latest_release_date": "2026-10-07",
+   "releases_last_12_months": 3
+  },
+  "docs_read": {
+   "accuracy": "https://docs.fingerprint.com/docs/identification-accuracy-and-confidence",
+   "linked_id": "https://docs.fingerprint.com/docs/identify-visitors",
+   "mcp_server": "https://docs.fingerprint.com/ai/mcp-server"
+  }
+ },
+ "real": {
+  "profile": {
+   "rows": 99997497,
+   "users_exact": 17630976,
+   "users_uniq_approx": 17578964,
+   "uniq_vs_exact_gap": -0.003,
+   "sites": 6506,
+   "first_day": "2013-07-02",
+   "last_day": "2013-07-31",
+   "days_present": 17,
+   "missing_days": [
+    "2013-07-04",
+    "2013-07-11",
+    "2013-07-12",
+    "2013-07-13",
+    "2013-07-14",
+    "2013-07-16",
+    "2013-07-17",
+    "2013-07-18",
+    "2013-07-19",
+    "2013-07-24",
+    "2013-07-25",
+    "2013-07-26",
+    "2013-07-27"
+   ],
+   "bot_share": 0.3328,
+   "mobile_share": 0.1017,
+   "bot_share_day_min": 0.2798,
+   "bot_share_day_max": 0.4034,
+   "users_day_min": 36592,
+   "users_day_min_date": "2013-07-30",
+   "users_day_max": 4446381,
+   "users_day_max_date": "2013-07-21",
+   "site_days_median": 4.0,
+   "share_sites_2_to_6_days": 0.8397,
+   "top30_share_of_rows": 0.6749
+  },
+  "profile_daily": [
+   {
+    "EventDate": "2013-07-02",
+    "events": 3704833,
+    "users": 841790,
+    "sites": 417,
+    "bot_share": 0.35942888653820565
+   },
+   {
+    "EventDate": "2013-07-03",
+    "events": 9829176,
+    "users": 1795997,
+    "sites": 1019,
+    "bot_share": 0.3674244921446111
+   },
+   {
+    "EventDate": "2013-07-05",
+    "events": 4489531,
+    "users": 808488,
+    "sites": 1141,
+    "bot_share": 0.29514129649622645
+   },
+   {
+    "EventDate": "2013-07-06",
+    "events": 6813120,
+    "users": 1136041,
+    "sites": 2687,
+    "bot_share": 0.28296815555868676
+   },
+   {
+    "EventDate": "2013-07-07",
+    "events": 1126867,
+    "users": 153761,
+    "sites": 1256,
+    "bot_share": 0.27978190860145874
+   },
+   {
+    "EventDate": "2013-07-08",
+    "events": 2350577,
+    "users": 303237,
+    "sites": 1765,
+    "bot_share": 0.3299394148755816
+   },
+   {
+    "EventDate": "2013-07-09",
+    "events": 13465700,
+    "users": 1679702,
+    "sites": 2673,
+    "bot_share": 0.32080515680581034
+   },
+   {
+    "EventDate": "2013-07-10",
+    "events": 5808207,
+    "users": 1051295,
+    "sites": 421,
+    "bot_share": 0.34908483805759677
+   },
+   {
+    "EventDate": "2013-07-15",
+    "events": 12621831,
+    "users": 3291214,
+    "sites": 215,
+    "bot_share": 0.40336746704974896
+   },
+   {
+    "EventDate": "2013-07-20",
+    "events": 429260,
+    "users": 195098,
+    "sites": 1507,
+    "bot_share": 0.3196361179704608
+   },
+   {
+    "EventDate": "2013-07-21",
+    "events": 16628272,
+    "users": 4446381,
+    "sites": 2915,
+    "bot_share": 0.31246481895412825
+   },
+   {
+    "EventDate": "2013-07-22",
+    "events": 1311117,
+    "users": 352446,
+    "sites": 396,
+    "bot_share": 0.3296143669863178
+   },
+   {
+    "EventDate": "2013-07-23",
+    "events": 1279654,
+    "users": 367086,
+    "sites": 396,
+    "bot_share": 0.31441155187261555
+   },
+   {
+    "EventDate": "2013-07-28",
+    "events": 9532621,
+    "users": 2640487,
+    "sites": 2712,
+    "bot_share": 0.31471365535249957
+   },
+   {
+    "EventDate": "2013-07-29",
+    "events": 6843338,
+    "users": 1305890,
+    "sites": 2756,
+    "bot_share": 0.2896736943287033
+   },
+   {
+    "EventDate": "2013-07-30",
+    "events": 79375,
+    "users": 36592,
+    "sites": 63,
+    "bot_share": 0.3234771653543307
+   },
+   {
+    "EventDate": "2013-07-31",
+    "events": 3684018,
+    "users": 394434,
+    "sites": 67,
+    "bot_share": 0.3750804149165395
+   }
+  ],
+  "entropy": [
+   {
+    "attribute": "WindowClientWidth",
+    "entropy_bits": 6.726,
+    "distinct_values": 2484,
+    "empty_share": 0.052
+   },
+   {
+    "attribute": "ResolutionWidth",
+    "entropy_bits": 3.58,
+    "distinct_values": 1364,
+    "empty_share": 0.026
+   },
+   {
+    "attribute": "UserAgentMajor",
+    "entropy_bits": 3.577,
+    "distinct_values": 39,
+    "empty_share": 0.003
+   },
+   {
+    "attribute": "ResolutionHeight",
+    "entropy_bits": 3.461,
+    "distinct_values": 1697,
+    "empty_share": 0.026
+   },
+   {
+    "attribute": "UserAgent",
+    "entropy_bits": 2.671,
+    "distinct_values": 46,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "FlashMinor",
+    "entropy_bits": 2.362,
+    "distinct_values": 9,
+    "empty_share": 0.174
+   },
+   {
+    "attribute": "ClientTimeZone",
+    "entropy_bits": 2.067,
+    "distinct_values": 110,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "OS",
+    "entropy_bits": 1.879,
+    "distinct_values": 81,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "UserAgentMinor",
+    "entropy_bits": 1.745,
+    "distinct_values": 63,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "SilverlightVersion1",
+    "entropy_bits": 1.355,
+    "distinct_values": 7,
+    "empty_share": 0.618
+   },
+   {
+    "attribute": "ResolutionDepth",
+    "entropy_bits": 1.19,
+    "distinct_values": 5,
+    "empty_share": 0.036
+   },
+   {
+    "attribute": "FlashMajor",
+    "entropy_bits": 1.064,
+    "distinct_values": 10,
+    "empty_share": 0.126
+   },
+   {
+    "attribute": "BrowserCountry",
+    "entropy_bits": 0.994,
+    "distinct_values": 72,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "JavaEnable",
+    "entropy_bits": 0.909,
+    "distinct_values": 2,
+    "empty_share": 0.325
+   },
+   {
+    "attribute": "BrowserLanguage",
+    "entropy_bits": 0.422,
+    "distinct_values": 64,
+    "empty_share": 0.0
+   },
+   {
+    "attribute": "IsMobile",
+    "entropy_bits": 0.316,
+    "distinct_values": 2,
+    "empty_share": 0.943
+   },
+   {
+    "attribute": "MobilePhoneModel",
+    "entropy_bits": 0.227,
+    "distinct_values": 81,
+    "empty_share": 0.967
+   },
+   {
+    "attribute": "CookieEnable",
+    "entropy_bits": 0.014,
+    "distinct_values": 2,
+    "empty_share": 0.001
+   }
+  ],
+  "entropy_fingerprint16_bits": 13.94,
+  "entropy_users": 3291214,
+  "entropy_max_bits_users": 21.65,
+  "anonymity": {
+   "day": "2013-07-15",
+   "fingerprints": 387931,
+   "unique_fps": 242036,
+   "shared_fps": 145895,
+   "unique_fp_share": 0.6239,
+   "largest_set": 61867,
+   "users_day": 3291214,
+   "share_users_alone_in_fp": 0.0735,
+   "fp18": 1076047,
+   "fp16": 387931,
+   "fp14": 218876,
+   "fps_per_user_p50": 1.0,
+   "fps_per_user_p90": 3.0,
+   "fps_per_user_p99": 9.0,
+   "share_users_multi_fp": 0.2371,
+   "users_month": 17630976,
+   "buckets": [
+    {
+     "is_mobile": 0,
+     "set_size": "1",
+     "fingerprints": 223706,
+     "users_total": 223706
+    },
+    {
+     "is_mobile": 0,
+     "set_size": "2",
+     "fingerprints": 48506,
+     "users_total": 97012
+    },
+    {
+     "is_mobile": 0,
+     "set_size": "3-5",
+     "fingerprints": 43104,
+     "users_total": 158929
+    },
+    {
+     "is_mobile": 0,
+     "set_size": "6-20",
+     "fingerprints": 30629,
+     "users_total": 312084
+    },
+    {
+     "is_mobile": 0,
+     "set_size": "21-100",
+     "fingerprints": 11117,
+     "users_total": 469520
+    },
+    {
+     "is_mobile": 0,
+     "set_size": "101-1000",
+     "fingerprints": 3097,
+     "users_total": 810887
+    },
+    {
+     "is_mobile": 0,
+     "set_size": ">1000",
+     "fingerprints": 327,
+     "users_total": 1083223
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "1",
+     "fingerprints": 18330,
+     "users_total": 18330
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "2",
+     "fingerprints": 3276,
+     "users_total": 6552
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "3-5",
+     "fingerprints": 2865,
+     "users_total": 10492
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "6-20",
+     "fingerprints": 2056,
+     "users_total": 20751
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "21-100",
+     "fingerprints": 725,
+     "users_total": 30729
+    },
+    {
+     "is_mobile": 1,
+     "set_size": "101-1000",
+     "fingerprints": 176,
+     "users_total": 42481
+    },
+    {
+     "is_mobile": 1,
+     "set_size": ">1000",
+     "fingerprints": 17,
+     "users_total": 73141
+    }
+   ]
+  },
+  "replay": {
+   "event": {
+    "n": 67487622,
+    "tp": 0.5669,
+    "fp": 0.365,
+    "fn": 0.0334,
+    "tn": 0.0348
+   },
+   "visit": {
+    "n": 16331302,
+    "tp": 0.0504,
+    "fp": 0.7773,
+    "fn": 0.0164,
+    "tn": 0.1559
+   },
+   "day": {
+    "n": 13096167,
+    "tp": 0.0065,
+    "fp": 0.7907,
+    "fn": 0.0061,
+    "tn": 0.1967
+   },
+   "events_top30": 67487622,
+   "visits_top30": 16331302,
+   "user_days_top30": 13096167,
+   "events_per_visit": 4.13,
+   "site_fp_event_min": 0.1081,
+   "site_fp_event_max": 0.7702,
+   "site_fp_visit_min": 0.4422,
+   "site_fp_visit_max": 0.8747,
+   "seconds_event_query": 2.27,
+   "sites": [
+    {
+     "site": 3922,
+     "events": 8527070,
+     "visits": 777125,
+     "tp_event": 0.7075,
+     "fp_event": 0.2506,
+     "tp_visit": 0.0331,
+     "fp_visit": 0.7241
+    },
+    {
+     "site": 199550,
+     "events": 7115413,
+     "visits": 5061746,
+     "tp_event": 0.1725,
+     "fp_event": 0.7702,
+     "tp_visit": 0.0473,
+     "fp_visit": 0.8747
+    },
+    {
+     "site": 105857,
+     "events": 5783214,
+     "visits": 2711397,
+     "tp_event": 0.4171,
+     "fp_event": 0.5333,
+     "tp_visit": 0.0308,
+     "fp_visit": 0.8644
+    },
+    {
+     "site": 46429,
+     "events": 4556155,
+     "visits": 626438,
+     "tp_event": 0.5888,
+     "fp_event": 0.329,
+     "tp_visit": 0.0261,
+     "fp_visit": 0.6981
+    },
+    {
+     "site": 225510,
+     "events": 4226610,
+     "visits": 211372,
+     "tp_event": 0.7174,
+     "fp_event": 0.2425,
+     "tp_visit": 0.1566,
+     "fp_visit": 0.5902
+    },
+    {
+     "site": 122612,
+     "events": 3574170,
+     "visits": 299805,
+     "tp_event": 0.6258,
+     "fp_event": 0.36,
+     "tp_visit": 0.0832,
+     "fp_visit": 0.7593
+    },
+    {
+     "site": 244045,
+     "events": 3369562,
+     "visits": 1285592,
+     "tp_event": 0.322,
+     "fp_event": 0.5731,
+     "tp_visit": 0.0212,
+     "fp_visit": 0.7809
+    },
+    {
+     "site": 233773,
+     "events": 2941425,
+     "visits": 118986,
+     "tp_event": 0.7046,
+     "fp_event": 0.2074,
+     "tp_visit": 0.0282,
+     "fp_visit": 0.519
+    },
+    {
+     "site": 178321,
+     "events": 2712905,
+     "visits": 279560,
+     "tp_event": 0.551,
+     "fp_event": 0.3469,
+     "tp_visit": 0.0655,
+     "fp_visit": 0.5812
+    },
+    {
+     "site": 245438,
+     "events": 2510103,
+     "visits": 299041,
+     "tp_event": 0.6031,
+     "fp_event": 0.2976,
+     "tp_visit": 0.0897,
+     "fp_visit": 0.5838
+    },
+    {
+     "site": 99062,
+     "events": 2407405,
+     "visits": 438668,
+     "tp_event": 0.7417,
+     "fp_event": 0.2263,
+     "tp_visit": 0.0363,
+     "fp_visit": 0.7931
+    },
+    {
+     "site": 145496,
+     "events": 2281616,
+     "visits": 105206,
+     "tp_event": 0.8296,
+     "fp_event": 0.132,
+     "tp_visit": 0.2122,
+     "fp_visit": 0.4981
+    },
+    {
+     "site": 123906,
+     "events": 1239698,
+     "visits": 677811,
+     "tp_event": 0.3781,
+     "fp_event": 0.5225,
+     "tp_visit": 0.0246,
+     "fp_visit": 0.7941
+    },
+    {
+     "site": 190147,
+     "events": 1193545,
+     "visits": 280904,
+     "tp_event": 0.4275,
+     "fp_event": 0.3729,
+     "tp_visit": 0.0176,
+     "fp_visit": 0.5858
+    },
+    {
+     "site": 117917,
+     "events": 1171179,
+     "visits": 308598,
+     "tp_event": 0.6586,
+     "fp_event": 0.2773,
+     "tp_visit": 0.0727,
+     "fp_visit": 0.686
+    },
+    {
+     "site": 229540,
+     "events": 1156490,
+     "visits": 98188,
+     "tp_event": 0.6598,
+     "fp_event": 0.2184,
+     "tp_visit": 0.0857,
+     "fp_visit": 0.4695
+    },
+    {
+     "site": 119677,
+     "events": 1116337,
+     "visits": 448098,
+     "tp_event": 0.5223,
+     "fp_event": 0.3966,
+     "tp_visit": 0.0448,
+     "fp_visit": 0.7585
+    },
+    {
+     "site": 5822,
+     "events": 1082664,
+     "visits": 73981,
+     "tp_event": 0.7797,
+     "fp_event": 0.1716,
+     "tp_visit": 0.1918,
+     "fp_visit": 0.5052
+    },
+    {
+     "site": 128858,
+     "events": 1075580,
+     "visits": 154669,
+     "tp_event": 0.7926,
+     "fp_event": 0.1614,
+     "tp_visit": 0.0504,
+     "fp_visit": 0.6389
+    },
+    {
+     "site": 69154,
+     "events": 1050001,
+     "visits": 576922,
+     "tp_event": 0.4682,
+     "fp_event": 0.4381,
+     "tp_visit": 0.1718,
+     "fp_visit": 0.6608
+    },
+    {
+     "site": 140443,
+     "events": 1026594,
+     "visits": 61113,
+     "tp_event": 0.7301,
+     "fp_event": 0.1612,
+     "tp_visit": 0.0731,
+     "fp_visit": 0.4422
+    },
+    {
+     "site": 1483,
+     "events": 967489,
+     "visits": 410751,
+     "tp_event": 0.4687,
+     "fp_event": 0.3803,
+     "tp_visit": 0.0352,
+     "fp_visit": 0.658
+    },
+    {
+     "site": 190994,
+     "events": 926928,
+     "visits": 171143,
+     "tp_event": 0.5084,
+     "fp_event": 0.3656,
+     "tp_visit": 0.0407,
+     "fp_visit": 0.6566
+    },
+    {
+     "site": 95978,
+     "events": 879551,
+     "visits": 260864,
+     "tp_event": 0.6322,
+     "fp_event": 0.297,
+     "tp_visit": 0.0503,
+     "fp_visit": 0.726
+    },
+    {
+     "site": 256004,
+     "events": 859512,
+     "visits": 107453,
+     "tp_event": 0.7525,
+     "fp_event": 0.183,
+     "tp_visit": 0.061,
+     "fp_visit": 0.6269
+    },
+    {
+     "site": 186300,
+     "events": 803240,
+     "visits": 110824,
+     "tp_event": 0.535,
+     "fp_event": 0.3143,
+     "tp_visit": 0.0291,
+     "fp_visit": 0.5721
+    },
+    {
+     "site": 7525,
+     "events": 764237,
+     "visits": 102343,
+     "tp_event": 0.7027,
+     "fp_event": 0.2248,
+     "tp_visit": 0.0448,
+     "fp_visit": 0.6016
+    },
+    {
+     "site": 62,
+     "events": 738172,
+     "visits": 109463,
+     "tp_event": 0.7026,
+     "fp_event": 0.2682,
+     "tp_visit": 0.1532,
+     "fp_visit": 0.6579
+    },
+    {
+     "site": 132048,
+     "events": 734284,
+     "visits": 110214,
+     "tp_event": 0.7486,
+     "fp_event": 0.1673,
+     "tp_visit": 0.1667,
+     "fp_visit": 0.5184
+    },
+    {
+     "site": 1095,
+     "events": 696473,
+     "visits": 53027,
+     "tp_event": 0.8492,
+     "fp_event": 0.1081,
+     "tp_visit": 0.0629,
+     "fp_visit": 0.5609
+    }
+   ]
+  },
+  "tolerant": [
+   {
+    "variant": 0,
+    "name": "strict 18 attributes",
+    "n": 16331302,
+    "tp": 0.0724,
+    "fp": 0.6246,
+    "fn": 0.0335,
+    "tn": 0.2695
+   },
+   {
+    "variant": 1,
+    "name": "exact 16 (reference)",
+    "n": 16331302,
+    "tp": 0.0504,
+    "fp": 0.7773,
+    "fn": 0.0164,
+    "tn": 0.1559
+   },
+   {
+    "variant": 2,
+    "name": "tolerant 14 (no minor versions)",
+    "n": 16331302,
+    "tp": 0.0382,
+    "fp": 0.8595,
+    "fn": 0.0074,
+    "tn": 0.0949
+   },
+   {
+    "variant": 3,
+    "name": "loose 9",
+    "n": 16331302,
+    "tp": 0.0222,
+    "fp": 0.9221,
+    "fn": 0.0045,
+    "tn": 0.0512
+   },
+   {
+    "variant": 4,
+    "name": "loosest 5",
+    "n": 16331302,
+    "tp": 0.0146,
+    "fp": 0.963,
+    "fn": 0.0006,
+    "tn": 0.0218
+   }
+  ],
+  "bots": {
+   "visit_share_bots": 0.3482,
+   "all_traffic": {
+    "n": 16331302,
+    "tp": 0.0504,
+    "fp": 0.7773,
+    "fn": 0.0164,
+    "tn": 0.1559
+   },
+   "humans_in_all_traffic": {
+    "n": 10644466,
+    "tp": 0.0501,
+    "fp": 0.7726,
+    "fn": 0.0169,
+    "tn": 0.1604
+   },
+   "bots_in_all_traffic": {
+    "n": 5686836,
+    "tp": 0.0509,
+    "fp": 0.7862,
+    "fn": 0.0154,
+    "tn": 0.1475
+   },
+   "humans_bots_removed_before_replay": {
+    "n": 10644466,
+    "tp": 0.0557,
+    "fp": 0.7465,
+    "fn": 0.0183,
+    "tn": 0.1795
+   }
+  },
+  "calibration": {
+   "sites_used": 27,
+   "ece_train": 0.0,
+   "ece_test": 0.0369,
+   "reliability_test": [
+    {
+     "n": 6985823.0,
+     "mean_score": 0.009,
+     "observed_precision": 0.0303
+    },
+    {
+     "n": 513695.0,
+     "mean_score": 0.16,
+     "observed_precision": 0.369
+    },
+    {
+     "n": 67288.0,
+     "mean_score": 0.2611,
+     "observed_precision": 0.3268
+    },
+    {
+     "n": 46973.0,
+     "mean_score": 0.3615,
+     "observed_precision": 0.6188
+    },
+    {
+     "n": 30477.0,
+     "mean_score": 0.4458,
+     "observed_precision": 0.6243
+    },
+    {
+     "n": 12378.0,
+     "mean_score": 0.5571,
+     "observed_precision": 0.4221
+    },
+    {
+     "n": 55702.0,
+     "mean_score": 0.6484,
+     "observed_precision": 0.7352
+    }
+   ],
+   "fp_share_by_bucket": [
+    {
+     "split": "test",
+     "bucket": "1",
+     "matched_visits": 646153,
+     "fp_share": 0.5715
+    },
+    {
+     "split": "test",
+     "bucket": "2",
+     "matched_visits": 325982,
+     "fp_share": 0.7839
+    },
+    {
+     "split": "test",
+     "bucket": "3-4",
+     "matched_visits": 403344,
+     "fp_share": 0.8558
+    },
+    {
+     "split": "test",
+     "bucket": "5-9",
+     "matched_visits": 558279,
+     "fp_share": 0.9091
+    },
+    {
+     "split": "test",
+     "bucket": "10-49",
+     "matched_visits": 1385837,
+     "fp_share": 0.9625
+    },
+    {
+     "split": "test",
+     "bucket": "50+",
+     "matched_visits": 4392741,
+     "fp_share": 0.9979
+    },
+    {
+     "split": "train",
+     "bucket": "1",
+     "matched_visits": 572477,
+     "fp_share": 0.7116
+    },
+    {
+     "split": "train",
+     "bucket": "2",
+     "matched_visits": 293037,
+     "fp_share": 0.8845
+    },
+    {
+     "split": "train",
+     "bucket": "3-4",
+     "matched_visits": 360554,
+     "fp_share": 0.928
+    },
+    {
+     "split": "train",
+     "bucket": "5-9",
+     "matched_visits": 489413,
+     "fp_share": 0.9604
+    },
+    {
+     "split": "train",
+     "bucket": "10-49",
+     "matched_visits": 1140847,
+     "fp_share": 0.9884
+    },
+    {
+     "split": "train",
+     "bucket": "50+",
+     "matched_visits": 2519145,
+     "fp_share": 0.9996
+    }
+   ]
+  },
+  "cookie_churn": {
+   "fp_visits": 12694594,
+   "share_nonoverlap_upper_bound": 0.5231,
+   "share_gap_over_1_day": 0.0233
+  },
+  "version_rollout": {
+   "majors": [
+    31,
+    22
+   ],
+   "daily_share": [
+    {
+     "day": "2013-07-02",
+     "major_31": 0.0465,
+     "major_22": 0.8517
+    },
+    {
+     "day": "2013-07-03",
+     "major_31": 0.0431,
+     "major_22": 0.857
+    },
+    {
+     "day": "2013-07-05",
+     "major_31": 0.0628,
+     "major_22": 0.8562
+    },
+    {
+     "day": "2013-07-06",
+     "major_31": 0.0622,
+     "major_22": 0.8398
+    },
+    {
+     "day": "2013-07-07",
+     "major_31": 0.0694,
+     "major_22": 0.8199
+    },
+    {
+     "day": "2013-07-08",
+     "major_31": 0.0711,
+     "major_22": 0.8341
+    },
+    {
+     "day": "2013-07-09",
+     "major_31": 0.0529,
+     "major_22": 0.8443
+    },
+    {
+     "day": "2013-07-10",
+     "major_31": 0.0955,
+     "major_22": 0.7925
+    },
+    {
+     "day": "2013-07-15",
+     "major_31": 0.8298,
+     "major_22": 0.0962
+    },
+    {
+     "day": "2013-07-20",
+     "major_31": 0.8702,
+     "major_22": 0.0375
+    },
+    {
+     "day": "2013-07-21",
+     "major_31": 0.8697,
+     "major_22": 0.0363
+    },
+    {
+     "day": "2013-07-22",
+     "major_31": 0.8769,
+     "major_22": 0.0359
+    },
+    {
+     "day": "2013-07-23",
+     "major_31": 0.8659,
+     "major_22": 0.0358
+    },
+    {
+     "day": "2013-07-28",
+     "major_31": 0.8915,
+     "major_22": 0.025
+    },
+    {
+     "day": "2013-07-29",
+     "major_31": 0.8807,
+     "major_22": 0.0259
+    },
+    {
+     "day": "2013-07-30",
+     "major_31": 0.8808,
+     "major_22": 0.0291
+    },
+    {
+     "day": "2013-07-31",
+     "major_31": 0.8921,
+     "major_22": 0.0249
+    }
+   ],
+   "users_changed_major": 317665,
+   "users_stable_major": 524848,
+   "share_changed_major": 0.377,
+   "multi_fp_changed": 1.0,
+   "multi_fp_stable": 0.4527,
+   "multi_fp_no_version_changed": 0.66,
+   "multi_fp_no_version_stable": 0.3953
+  },
+  "reconciliation_reference": {
+   "sites": 67,
+   "rows_event_grain": 1514013
+  },
+  "playground": {
+   "queries_sent": 34,
+   "budget": 150,
+   "failed_queries": 3,
+   "server_version": "26.10.3.7",
+   "first_query_utc": "2026-11-23T09:19:02+00:00",
+   "last_query_utc": "2026-11-23T13:04:24+00:00"
+  },
+  "reconciliation": {
+   "sites": 67,
+   "site_grain_rows": 134,
+   "total_abs_diff": 0,
+   "event_rows": 1514013
+  }
+ },
+ "public": {
+  "releases_in_window": [
+   {
+    "browser": "Chrome",
+    "major": "153",
+    "release_date": "2026-08-26"
+   },
+   {
+    "browser": "Chrome",
+    "major": "154",
+    "release_date": "2026-09-09"
+   },
+   {
+    "browser": "Chrome",
+    "major": "155",
+    "release_date": "2026-09-23"
+   },
+   {
+    "browser": "Chrome",
+    "major": "156",
+    "release_date": "2026-10-07"
+   },
+   {
+    "browser": "Chrome",
+    "major": "157",
+    "release_date": "2026-10-22"
+   },
+   {
+    "browser": "Chrome",
+    "major": "158",
+    "release_date": "2026-11-04"
+   },
+   {
+    "browser": "Chrome",
+    "major": "159",
+    "release_date": "2026-11-18"
+   },
+   {
+    "browser": "Firefox",
+    "major": "155",
+    "release_date": "2026-09-01"
+   },
+   {
+    "browser": "Firefox",
+    "major": "156",
+    "release_date": "2026-09-15"
+   },
+   {
+    "browser": "Firefox",
+    "major": "157",
+    "release_date": "2026-09-29"
+   },
+   {
+    "browser": "Firefox",
+    "major": "158",
+    "release_date": "2026-10-13"
+   },
+   {
+    "browser": "Firefox",
+    "major": "159",
+    "release_date": "2026-10-27"
+   },
+   {
+    "browser": "Firefox",
+    "major": "160",
+    "release_date": "2026-11-10"
+   },
+   {
+    "browser": "iOS",
+    "major": "27",
+    "release_date": "2026-09-14"
+   }
+  ],
+  "chrome_feed_checks": {
+   "builds_in_feed": 200,
+   "milestone_equals_version_major": true,
+   "repeated_version_strings": 0,
+   "first_build": "145.0.7632.161",
+   "last_build": "159.0.8154.13",
+   "first_build_dates_increase_with_milestone": true,
+   "oldest_milestone_dropped_as_incomplete": 145
+  },
+  "adoption": {
+   "Chrome": {
+    "versions": 13,
+    "uptake_week1": 0.0038,
+    "uptake_week2": 0.0649,
+    "uptake_week4": 0.5951,
+    "uptake_week8": 0.717
+   },
+   "Firefox": {
+    "versions": 52,
+    "uptake_week1": 0.6189,
+    "uptake_week2": 0.691,
+    "uptake_week4": 0.7196,
+    "uptake_week8": 0.7343
+   },
+   "Mobile Safari": {
+    "versions": 4,
+    "uptake_week1": 0.1481,
+    "uptake_week2": 0.1761,
+    "uptake_week4": 0.2128,
+    "uptake_week8": 0.2865
+   }
+  },
+  "adoption_curves_median": {
+   "Chrome": {
+    "0": 0.001,
+    "1": 0.0038,
+    "2": 0.0649,
+    "3": 0.3781,
+    "4": 0.5951,
+    "5": 0.663,
+    "6": 0.6958,
+    "7": 0.7028,
+    "8": 0.717,
+    "9": 0.7286,
+    "10": 0.7512,
+    "11": 0.7479,
+    "12": 0.7641
+   },
+   "Firefox": {
+    "0": 0.2085,
+    "1": 0.6189,
+    "2": 0.691,
+    "3": 0.7023,
+    "4": 0.7196,
+    "5": 0.7262,
+    "6": 0.7307,
+    "7": 0.7348,
+    "8": 0.7343,
+    "9": 0.7399,
+    "10": 0.7435,
+    "11": 0.7491,
+    "12": 0.7446
+   },
+   "Mobile Safari": {
+    "0": 0.069,
+    "1": 0.1481,
+    "2": 0.1761,
+    "3": 0.1971,
+    "4": 0.2128,
+    "5": 0.24,
+    "6": 0.2577,
+    "7": 0.2723,
+    "8": 0.2865,
+    "9": 0.3676,
+    "10": 0.4292,
+    "11": 0.5963,
+    "12": 0.6031
+   }
+  },
+  "browser_share_week": "2026-11-15",
+  "browser_share": [
+   {
+    "browser_family": "Chrome Mobile",
+    "share": 0.2911
+   },
+   {
+    "browser_family": "Mobile Safari",
+    "share": 0.2126
+   },
+   {
+    "browser_family": "Chrome",
+    "share": 0.1928
+   },
+   {
+    "browser_family": "Edge",
+    "share": 0.0498
+   },
+   {
+    "browser_family": "Firefox",
+    "share": 0.0478
+   },
+   {
+    "browser_family": "Chrome Mobile iOS",
+    "share": 0.0424
+   },
+   {
+    "browser_family": "Safari",
+    "share": 0.0372
+   },
+   {
+    "browser_family": "Google",
+    "share": 0.0325
+   },
+   {
+    "browser_family": "Other",
+    "share": 0.0938
+   }
+  ],
+  "unique_devices": {
+   "days": 690,
+   "first_day": "2025-01-01",
+   "last_day": "2026-11-21",
+   "first_day_devices": 72986919,
+   "first_day_offset": 7715610,
+   "offset_share_median": 0.239,
+   "devices_median": 62376385,
+   "alert_days": [
+    "2025-07-25",
+    "2025-07-26",
+    "2025-07-27"
+   ]
+  }
+ },
+ "sim": {
+  "volume": {
+   "events": 15534737,
+   "customers": 14,
+   "control_share": 0.5667,
+   "incognito_share": 0.0588,
+   "bad_bot_share": 0.0238,
+   "events_per_month_equivalent": 5189626,
+   "scale_vs_1bn_per_month": 193.0
+  },
+  "measured_vs_truth": {
+   "measured_fp": 0.0098,
+   "measured_fn": 0.0237,
+   "truth_fp_all_traffic": 0.0071,
+   "truth_fn_all_traffic": 0.0145,
+   "control_events": 8693963,
+   "human_events": 15164669
+  },
+  "e1": {
+   "after_fix_154": {
+    "control_events": 263281,
+    "fn_rate": 0.0235,
+    "ci": [
+     0.023,
+     0.0241
+    ]
+   },
+   "after_fix_155": {
+    "control_events": 107034,
+    "fn_rate": 0.0239,
+    "ci": [
+     0.023,
+     0.0249
+    ]
+   },
+   "drift_154": {
+    "control_events": 99778,
+    "fn_rate": 0.0228,
+    "ci": [
+     0.0219,
+     0.0238
+    ]
+   },
+   "drift_155": {
+    "control_events": 1439,
+    "fn_rate": 0.0883,
+    "ci": [
+     0.0747,
+     0.104
+    ]
+   },
+   "release_date": "2026-09-23",
+   "fix_date": "2026-10-02",
+   "ratio_drift_vs_154": 3.87,
+   "customers_with_fn_on_155_during_drift": 11,
+   "chrome_traffic_share_on_155_during_drift": 0.0034
+  },
+  "e2": {
+   "segment": "Mobile Safari, probabilistic answers with an existing visitor",
+   "before_other": {
+    "answers": 309457,
+    "avg_confidence": 0.9747,
+    "true_fp_rate": 0.0273,
+    "implied_fp_rate": 0.0253
+   },
+   "after_ios27": {
+    "answers": 569060,
+    "avg_confidence": 0.9746,
+    "true_fp_rate": 0.0302,
+    "implied_fp_rate": 0.0254
+   },
+   "issue_ios27": {
+    "answers": 52514,
+    "avg_confidence": 0.9683,
+    "true_fp_rate": 0.0573,
+    "implied_fp_rate": 0.0317
+   },
+   "issue_other": {
+    "answers": 291257,
+    "avg_confidence": 0.9746,
+    "true_fp_rate": 0.0273,
+    "implied_fp_rate": 0.0254
+   },
+   "after_other": {
+    "answers": 1358921,
+    "avg_confidence": 0.9745,
+    "true_fp_rate": 0.0307,
+    "implied_fp_rate": 0.0255
+   },
+   "measured_fp_ios27_issue": 0.0487,
+   "measured_fp_ios27_after": 0.0245,
+   "c02_step_up_share": {
+    "before": {
+     "all": 0.0194,
+     "ios27": null,
+     "iphone_other": 0.0702
+    },
+    "issue": {
+     "all": 0.0212,
+     "ios27": 0.1123,
+     "iphone_other": 0.0712
+    },
+    "after": {
+     "all": 0.0193,
+     "ios27": 0.072,
+     "iphone_other": 0.0697
+    }
+   },
+   "ios27_share_of_iphone_safari_first_week_oct": 0.1928,
+   "release_date": "2026-09-14",
+   "fix_date": "2026-10-07"
+  },
+  "e3": {
+   "accounts_per_visitor": {
+    "excl_bad_bots": {
+     "mean": 1.892,
+     "p99": 2.0,
+     "max": 3712,
+     "share_over_5": 0.0008
+    },
+    "excl_internal_and_bots": {
+     "mean": 1.062,
+     "p99": 2.0,
+     "max": 12,
+     "share_over_5": 0.0005
+    },
+    "all": {
+     "mean": 1.917,
+     "p99": 2.0,
+     "max": 3712,
+     "share_over_5": 0.0019
+    }
+   },
+   "visitors_per_account": {
+    "excl_bad_bots": {
+     "mean": 2.117,
+     "p99": 6.0
+    },
+    "excl_internal_and_bots": {
+     "mean": 1.746,
+     "p99": 5.0
+    },
+    "all": {
+     "mean": 2.191,
+     "p99": 6.0
+    }
+   },
+   "internal_rule": {
+    "flagged": 40,
+    "true_agents_flagged": 40,
+    "non_agents_flagged": 0,
+    "agents_missed": 0,
+    "precision": 1.0,
+    "recall": 1.0
+   },
+   "visitors_over_5_accounts": 340,
+   "of_which_internal": 40,
+   "agent_share_of_c07_events": 0.093,
+   "export_pairs": 344730,
+   "our_pairs": 344730,
+   "export_logins": 1120049,
+   "our_logins": 1120049,
+   "export_top_visitor_accounts": 3712
+  },
+  "e4": {
+   "month": "2026-10",
+   "bridge": [
+    {
+     "step": "Customer export: sessions, October 2026 (local days, New York time)",
+     "value": 446141
+    },
+    {
+     "step": "minus sessions with no visitor id (identification request blocked: no proxy integration)",
+     "value": -39844
+    },
+    {
+     "step": "minus duplicate sessions in the export (page reloads counted twice; unexplained residual)",
+     "value": -658
+    },
+    {
+     "step": "= our identification events on the same LOCAL days",
+     "value": 405639,
+     "subtotal": true
+    },
+    {
+     "step": "minus / plus the time-zone shift (local days vs UTC days at both ends of the month)",
+     "value": 689
+    },
+    {
+     "step": "= billed identification events, October 2026 (UTC days)",
+     "value": 406328,
+     "subtotal": true
+    }
+   ],
+   "their_over_ours_pct": 0.098,
+   "blocked_share": 0.0893,
+   "residual_share": 0.00162,
+   "tz_shift": 689,
+   "daily_gap_mean_abs": 0.1045,
+   "daily_gap_min": -0.2067,
+   "daily_gap_max": 0.3856,
+   "dst_days": [
+    {
+     "local_date": "2026-10-31",
+     "sessions": 12633,
+     "ours_utc": 11802,
+     "ours_local": 11439
+    },
+    {
+     "local_date": "2026-11-01",
+     "sessions": 13120,
+     "ours_utc": 11085,
+     "ours_local": 11963
+    },
+    {
+     "local_date": "2026-11-02",
+     "sessions": 15785,
+     "ours_utc": 13650,
+     "ours_local": 14307
+    }
+   ]
+  },
+  "e5": {
+   "c05_rows_in_file": 19202,
+   "c05_unique": 14224,
+   "c05_duplicates": 4978,
+   "dup_share": 0.35,
+   "late_partition": "2026-10-28",
+   "late_loaded_at": "2026-10-31 02:08",
+   "dbt_warnings": {
+    "source_unique_sim_identification_events_event_id": 4978,
+    "assert_raw_rows_match_ingestion_log": 1
+   },
+   "incremental_check": {
+    "2026-10-25": {
+     "incremental_after_last_run": 197193,
+     "full_build": 197193,
+     "naive_pipeline": 197193
+    },
+    "2026-10-26": {
+     "incremental_after_last_run": 239661,
+     "full_build": 239661,
+     "naive_pipeline": 239661
+    },
+    "2026-10-27": {
+     "incremental_after_last_run": 240233,
+     "full_build": 240233,
+     "naive_pipeline": 245211
+    },
+    "2026-10-28": {
+     "incremental_after_last_run": 233811,
+     "full_build": 233811,
+     "naive_pipeline": 0
+    },
+    "2026-10-29": {
+     "incremental_after_last_run": 233983,
+     "full_build": 233983,
+     "naive_pipeline": 233983
+    },
+    "2026-10-30": {
+     "incremental_after_last_run": 226990,
+     "full_build": 226990,
+     "naive_pipeline": 226990
+    },
+    "2026-10-31": {
+     "incremental_after_last_run": 199146,
+     "full_build": 199146,
+     "naive_pipeline": 199146
+    }
+   },
+   "naive_by_load_day": [
+    {
+     "report_day": "2026-10-25",
+     "rows_by_load_day": 197193
+    },
+    {
+     "report_day": "2026-10-26",
+     "rows_by_load_day": 239661
+    },
+    {
+     "report_day": "2026-10-27",
+     "rows_by_load_day": 245211
+    },
+    {
+     "report_day": "2026-10-29",
+     "rows_by_load_day": 233983
+    },
+    {
+     "report_day": "2026-10-30",
+     "rows_by_load_day": 460801
+    },
+    {
+     "report_day": "2026-10-31",
+     "rows_by_load_day": 199146
+    }
+   ]
+  },
+  "e6": {
+   "fn_humans_outside": 0.0184,
+   "fn_true_humans_wave": 0.0162,
+   "fn_true_humans_outside": 0.0179,
+   "bot_share_wave": 0.4082,
+   "bot_share_outside": 0.0245,
+   "fn_all_traffic_wave": 0.1881,
+   "fn_humans_wave": 0.0412,
+   "fn_bots_wave": 0.6025,
+   "visitors_per_account_wave_all": 2.53,
+   "visitors_per_account_wave_excl_bots": 1.52,
+   "wave": [
+    "2026-11-05",
+    "2026-11-12"
+   ]
+  },
+  "e7": {
+   "incognito_share_before": 0.0739,
+   "incognito_share_after": 0.2009,
+   "true_error_before": 0.0191,
+   "true_error_after": 0.0282,
+   "measured_error_before": 0.0321,
+   "measured_error_after": 0.0314,
+   "new_visitor_share_before": 0.0388,
+   "new_visitor_share_after": 0.0548,
+   "by_segment": {
+    "after_incognito": {
+     "events": 103276,
+     "true_error_rate": 0.0881,
+     "true_fn_rate": 0.0726
+    },
+    "before_normal": {
+     "events": 545506,
+     "true_error_rate": 0.0137,
+     "true_fn_rate": 0.0092
+    },
+    "after_normal": {
+     "events": 410716,
+     "true_error_rate": 0.0131,
+     "true_fn_rate": 0.009
+    },
+    "before_incognito": {
+     "events": 43542,
+     "true_error_rate": 0.0864,
+     "true_fn_rate": 0.0712
+    }
+   },
+   "campaign_date": "2026-10-12"
+  },
+  "e8": {
+   "weeks": [
+    {
+     "week_start": "2026-08-24",
+     "control_events": 568875.0,
+     "fp_rate_crude": 0.008501,
+     "fn_rate_crude": 0.022741,
+     "fp_rate_standardized": 0.008506,
+     "fn_rate_standardized": 0.022725,
+     "fp_rate_stable_cohort": 0.008501,
+     "fn_rate_stable_cohort": 0.022741
+    },
+    {
+     "week_start": "2026-08-31",
+     "control_events": 573439.0,
+     "fp_rate_crude": 0.008439,
+     "fn_rate_crude": 0.022792,
+     "fp_rate_standardized": 0.008434,
+     "fn_rate_standardized": 0.022795,
+     "fp_rate_stable_cohort": 0.008439,
+     "fn_rate_stable_cohort": 0.022792
+    },
+    {
+     "week_start": "2026-09-07",
+     "control_events": 572059.0,
+     "fp_rate_crude": 0.008567,
+     "fn_rate_crude": 0.022643,
+     "fp_rate_standardized": 0.008571,
+     "fn_rate_standardized": 0.022633,
+     "fp_rate_stable_cohort": 0.008567,
+     "fn_rate_stable_cohort": 0.022643
+    },
+    {
+     "week_start": "2026-09-14",
+     "control_events": 575432.0,
+     "fp_rate_crude": 0.008496,
+     "fn_rate_crude": 0.023148,
+     "fp_rate_standardized": 0.00849,
+     "fn_rate_standardized": 0.023143,
+     "fp_rate_stable_cohort": 0.008496,
+     "fn_rate_stable_cohort": 0.023148
+    },
+    {
+     "week_start": "2026-09-21",
+     "control_events": 581064.0,
+     "fp_rate_crude": 0.008706,
+     "fn_rate_crude": 0.022822,
+     "fp_rate_standardized": 0.008707,
+     "fn_rate_standardized": 0.022824,
+     "fp_rate_stable_cohort": 0.008706,
+     "fn_rate_stable_cohort": 0.022822
+    },
+    {
+     "week_start": "2026-09-28",
+     "control_events": 582317.0,
+     "fp_rate_crude": 0.008799,
+     "fn_rate_crude": 0.022898,
+     "fp_rate_standardized": 0.008816,
+     "fn_rate_standardized": 0.022893,
+     "fp_rate_stable_cohort": 0.008799,
+     "fn_rate_stable_cohort": 0.022898
+    },
+    {
+     "week_start": "2026-10-05",
+     "control_events": 579002.0,
+     "fp_rate_crude": 0.008658,
+     "fn_rate_crude": 0.022822,
+     "fp_rate_standardized": 0.008647,
+     "fn_rate_standardized": 0.022823,
+     "fp_rate_stable_cohort": 0.008658,
+     "fn_rate_stable_cohort": 0.022822
+    },
+    {
+     "week_start": "2026-10-12",
+     "control_events": 573833.0,
+     "fp_rate_crude": 0.00837,
+     "fn_rate_crude": 0.023092,
+     "fp_rate_standardized": 0.008364,
+     "fn_rate_standardized": 0.02312,
+     "fp_rate_stable_cohort": 0.008359,
+     "fn_rate_stable_cohort": 0.02306
+    },
+    {
+     "week_start": "2026-10-19",
+     "control_events": 747193.0,
+     "fp_rate_crude": 0.010862,
+     "fn_rate_crude": 0.024282,
+     "fp_rate_standardized": 0.008395,
+     "fn_rate_standardized": 0.023218,
+     "fp_rate_stable_cohort": 0.008444,
+     "fn_rate_stable_cohort": 0.022765
+    },
+    {
+     "week_start": "2026-10-26",
+     "control_events": 803324.0,
+     "fp_rate_crude": 0.011237,
+     "fn_rate_crude": 0.024614,
+     "fp_rate_standardized": 0.008399,
+     "fn_rate_standardized": 0.023385,
+     "fp_rate_stable_cohort": 0.008438,
+     "fn_rate_stable_cohort": 0.023001
+    },
+    {
+     "week_start": "2026-11-02",
+     "control_events": 842040.0,
+     "fp_rate_crude": 0.011389,
+     "fn_rate_crude": 0.024669,
+     "fp_rate_standardized": 0.008479,
+     "fn_rate_standardized": 0.023445,
+     "fp_rate_stable_cohort": 0.008492,
+     "fn_rate_stable_cohort": 0.022638
+    },
+    {
+     "week_start": "2026-11-09",
+     "control_events": 849088.0,
+     "fp_rate_crude": 0.011343,
+     "fn_rate_crude": 0.024764,
+     "fp_rate_standardized": 0.008363,
+     "fn_rate_standardized": 0.023753,
+     "fp_rate_stable_cohort": 0.008445,
+     "fn_rate_stable_cohort": 0.022799
+    },
+    {
+     "week_start": "2026-11-16",
+     "control_events": 846297.0,
+     "fp_rate_crude": 0.011392,
+     "fn_rate_crude": 0.024294,
+     "fp_rate_standardized": 0.008463,
+     "fn_rate_standardized": 0.023056,
+     "fp_rate_stable_cohort": 0.008517,
+     "fn_rate_stable_cohort": 0.022434
+    }
+   ],
+   "crude_change": 0.2977,
+   "standardized_change": 0.0037,
+   "stable_cohort_change": 0.0101,
+   "crude_before": 0.0084,
+   "crude_after": 0.0109,
+   "c12_vs_others_same_segment": [
+    {
+     "browser": "Chrome",
+     "c12_fp": 0.0054,
+     "c12_ci": [
+      0.0047,
+      0.0061
+     ],
+     "others_fp": 0.0051,
+     "others_ci": [
+      0.0049,
+      0.0052
+     ],
+     "p_value": 0.5315
+    },
+    {
+     "browser": "Chrome Mobile",
+     "c12_fp": 0.0101,
+     "c12_ci": [
+      0.0097,
+      0.0106
+     ],
+     "others_fp": 0.0102,
+     "others_ci": [
+      0.0099,
+      0.0104
+     ],
+     "p_value": 0.8986
+    },
+    {
+     "browser": "Mobile Safari",
+     "c12_fp": 0.0239,
+     "c12_ci": [
+      0.0235,
+      0.0242
+     ],
+     "others_fp": 0.0245,
+     "others_ci": [
+      0.024,
+      0.025
+     ],
+     "p_value": 0.1658
+    }
+   ],
+   "customers_week_over_week": [
+    {
+     "customer_id": "C01",
+     "fp_a": 0.0082,
+     "fp_b": 0.0082,
+     "p_value": 0.9918
+    },
+    {
+     "customer_id": "C02",
+     "fp_a": 0.0078,
+     "fp_b": 0.0077,
+     "p_value": 0.8535
+    },
+    {
+     "customer_id": "C03",
+     "fp_a": 0.0096,
+     "fp_b": 0.0099,
+     "p_value": 0.7429
+    },
+    {
+     "customer_id": "C04",
+     "fp_a": 0.0093,
+     "fp_b": 0.0096,
+     "p_value": 0.6468
+    },
+    {
+     "customer_id": "C05",
+     "fp_a": 0.0093,
+     "fp_b": 0.0087,
+     "p_value": 0.43
+    },
+    {
+     "customer_id": "C06",
+     "fp_a": 0.0077,
+     "fp_b": 0.0094,
+     "p_value": 0.0669
+    },
+    {
+     "customer_id": "C07",
+     "fp_a": 0.0072,
+     "fp_b": 0.0072,
+     "p_value": 0.9586
+    },
+    {
+     "customer_id": "C08",
+     "fp_a": 0.0082,
+     "fp_b": 0.0082,
+     "p_value": 0.986
+    },
+    {
+     "customer_id": "C09",
+     "fp_a": 0.0083,
+     "fp_b": 0.0083,
+     "p_value": 0.9645
+    },
+    {
+     "customer_id": "C10",
+     "fp_a": 0.0062,
+     "fp_b": 0.0071,
+     "p_value": 0.3847
+    },
+    {
+     "customer_id": "C11",
+     "fp_a": 0.0094,
+     "fp_b": 0.0085,
+     "p_value": 0.344
+    }
+   ],
+   "customers_significant_at_1pct": 0,
+   "c12_share_of_control_week": 0.228
+  },
+  "stats": {
+   "c04": {
+    "period": [
+     "2026-10-26",
+     "2026-11-22"
+    ],
+    "control_events": 306238,
+    "visitors": 117153,
+    "fp_rate": 0.00929,
+    "wilson": [
+     0.00895,
+     0.00963
+    ],
+    "cluster_bootstrap": [
+     0.00892,
+     0.00963
+    ],
+    "width_ratio_cluster_vs_naive": 1.05,
+    "design_effect": 1.07,
+    "control_events_per_day": 10937,
+    "mde_delta": 0.002,
+    "required_n_per_period": 38714,
+    "required_days_per_period": 3.5,
+    "mde_with_28_days": 0.00071
+   },
+   "design_effects": [
+    {
+     "customer_id": "C04",
+     "metric": "FP",
+     "from": "2026-10-26",
+     "events_per_visitor": 2.61,
+     "max_events_one_visitor": 119,
+     "rate": 0.00929,
+     "design_effect": 1.07,
+     "width_ratio": 1.05
+    },
+    {
+     "customer_id": "C04",
+     "metric": "FN",
+     "from": "2026-08-24",
+     "events_per_visitor": 5.78,
+     "max_events_one_visitor": 263,
+     "rate": 0.02367,
+     "design_effect": 1.29,
+     "width_ratio": 1.12
+    },
+    {
+     "customer_id": "C07",
+     "metric": "FN",
+     "from": "2026-08-24",
+     "events_per_visitor": 6.9,
+     "max_events_one_visitor": 3623,
+     "rate": 0.02323,
+     "design_effect": 1.61,
+     "width_ratio": 1.26
+    },
+    {
+     "customer_id": "C12",
+     "metric": "FP",
+     "from": "2026-10-19",
+     "events_per_visitor": 4.41,
+     "max_events_one_visitor": 245,
+     "rate": 0.01899,
+     "design_effect": 1.22,
+     "width_ratio": 1.08
+    }
+   ],
+   "threshold_tradeoff_c02": [
+    {
+     "threshold": 0.9,
+     "step_up_share": 0.004,
+     "fp_caught_share": 0.1099,
+     "precision_of_step_up": 0.1649
+    },
+    {
+     "threshold": 0.92,
+     "step_up_share": 0.0071,
+     "fp_caught_share": 0.1629,
+     "precision_of_step_up": 0.1393
+    },
+    {
+     "threshold": 0.94,
+     "step_up_share": 0.0137,
+     "fp_caught_share": 0.2424,
+     "precision_of_step_up": 0.1077
+    },
+    {
+     "threshold": 0.95,
+     "step_up_share": 0.0198,
+     "fp_caught_share": 0.3022,
+     "precision_of_step_up": 0.0924
+    },
+    {
+     "threshold": 0.96,
+     "step_up_share": 0.0301,
+     "fp_caught_share": 0.385,
+     "precision_of_step_up": 0.0776
+    },
+    {
+     "threshold": 0.97,
+     "step_up_share": 0.0481,
+     "fp_caught_share": 0.4875,
+     "precision_of_step_up": 0.0615
+    },
+    {
+     "threshold": 0.98,
+     "step_up_share": 0.0834,
+     "fp_caught_share": 0.6414,
+     "precision_of_step_up": 0.0467
+    },
+    {
+     "threshold": 0.99,
+     "step_up_share": 0.1623,
+     "fp_caught_share": 0.8402,
+     "precision_of_step_up": 0.0314
+    }
+   ],
+   "c02_found_answers": 1387254,
+   "calibration_all_other_segments": {
+    "ece": 0.00252,
+    "table": [
+     {
+      "bin_lo": 0.8,
+      "bin_hi": 0.9,
+      "n": 55631.0,
+      "mean_score": 0.87007,
+      "observed_precision": 0.84766
+     },
+     {
+      "bin_lo": 0.9,
+      "bin_hi": 0.94,
+      "n": 155006.0,
+      "mean_score": 0.92496,
+      "observed_precision": 0.91355
+     },
+     {
+      "bin_lo": 0.94,
+      "bin_hi": 0.96,
+      "n": 266660.0,
+      "mean_score": 0.9516,
+      "observed_precision": 0.94412
+     },
+     {
+      "bin_lo": 0.96,
+      "bin_hi": 0.97,
+      "n": 296598.0,
+      "mean_score": 0.96546,
+      "observed_precision": 0.96093
+     },
+     {
+      "bin_lo": 0.97,
+      "bin_hi": 0.98,
+      "n": 581680.0,
+      "mean_score": 0.97555,
+      "observed_precision": 0.97234
+     },
+     {
+      "bin_lo": 0.98,
+      "bin_hi": 0.99,
+      "n": 1321718.0,
+      "mean_score": 0.9857,
+      "observed_precision": 0.98405
+     },
+     {
+      "bin_lo": 0.99,
+      "bin_hi": 1.0,
+      "n": 2793170.0,
+      "mean_score": 0.99543,
+      "observed_precision": 0.99421
+     }
+    ]
+   },
+   "calibration_ios27_before_fix": {
+    "ece": 0.02449,
+    "table": [
+     {
+      "bin_lo": 0.8,
+      "bin_hi": 0.9,
+      "n": 1912.0,
+      "mean_score": 0.86838,
+      "observed_precision": 0.76569
+     },
+     {
+      "bin_lo": 0.9,
+      "bin_hi": 0.94,
+      "n": 4261.0,
+      "mean_score": 0.92455,
+      "observed_precision": 0.85567
+     },
+     {
+      "bin_lo": 0.94,
+      "bin_hi": 0.96,
+      "n": 6135.0,
+      "mean_score": 0.95146,
+      "observed_precision": 0.90954
+     },
+     {
+      "bin_lo": 0.96,
+      "bin_hi": 0.97,
+      "n": 5717.0,
+      "mean_score": 0.96541,
+      "observed_precision": 0.93511
+     },
+     {
+      "bin_lo": 0.97,
+      "bin_hi": 0.98,
+      "n": 9512.0,
+      "mean_score": 0.97531,
+      "observed_precision": 0.95711
+     },
+     {
+      "bin_lo": 0.98,
+      "bin_hi": 0.99,
+      "n": 14255.0,
+      "mean_score": 0.98519,
+      "observed_precision": 0.97545
+     },
+     {
+      "bin_lo": 0.99,
+      "bin_hi": 1.0,
+      "n": 10394.0,
+      "mean_score": 0.994,
+      "observed_precision": 0.98961
+     }
+    ]
+   }
+  },
+  "queue": {
+   "requests": 140,
+   "open_at_end": 9,
+   "by_team": {
+    "CS": 70,
+    "SE": 50,
+    "Product": 20
+   },
+   "by_type": {
+    "report": 49,
+    "false_negative": 28,
+    "method_question": 26,
+    "poc": 20,
+    "false_positive": 16,
+    "reconciliation": 1
+   },
+   "by_tier": {
+    "P1": {
+     "n": 17,
+     "median_hours": 36.7,
+     "within_sla": 0.706
+    },
+    "P2": {
+     "n": 53,
+     "median_hours": 57.1,
+     "within_sla": 0.83
+    },
+    "P3": {
+     "n": 42,
+     "median_hours": 113.5,
+     "within_sla": 0.905
+    },
+    "P4": {
+     "n": 19,
+     "median_hours": 177.7,
+     "within_sla": 1.0
+    }
+   },
+   "tier_counts": {
+    "P1": 18,
+    "P2": 56,
+    "P3": 47,
+    "P4": 19
+   },
+   "self_service_possible": 80,
+   "self_service_share": 0.571,
+   "self_service_hours": 132.3,
+   "total_hours": 550.3,
+   "self_service_hours_share": 0.24,
+   "linked_to_hidden_events": 8
+  },
+  "health_latest": [
+   {
+    "customer_id": "C01",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C02",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C03",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C04",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C05",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C06",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C07",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C08",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C09",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C10",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C11",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "C12",
+    "health_status": "amber",
+    "health_reasons": "1 open high request(s)"
+   },
+   {
+    "customer_id": "P01",
+    "health_status": "green",
+    "health_reasons": ""
+   },
+   {
+    "customer_id": "P02",
+    "health_status": "green",
+    "health_reasons": ""
+   }
+  ],
+  "health_counts_by_week": [
+   {
+    "w": "2026-08-24",
+    "health_status": "grey",
+    "n": 11
+   },
+   {
+    "w": "2026-08-31",
+    "health_status": "grey",
+    "n": 11
+   },
+   {
+    "w": "2026-09-07",
+    "health_status": "green",
+    "n": 11
+   },
+   {
+    "w": "2026-09-14",
+    "health_status": "amber",
+    "n": 1
+   },
+   {
+    "w": "2026-09-14",
+    "health_status": "green",
+    "n": 10
+   },
+   {
+    "w": "2026-09-21",
+    "health_status": "green",
+    "n": 11
+   },
+   {
+    "w": "2026-09-28",
+    "health_status": "amber",
+    "n": 2
+   },
+   {
+    "w": "2026-09-28",
+    "health_status": "green",
+    "n": 9
+   },
+   {
+    "w": "2026-10-05",
+    "health_status": "amber",
+    "n": 1
+   },
+   {
+    "w": "2026-10-05",
+    "health_status": "green",
+    "n": 10
+   },
+   {
+    "w": "2026-10-12",
+    "health_status": "amber",
+    "n": 2
+   },
+   {
+    "w": "2026-10-12",
+    "health_status": "green",
+    "n": 9
+   },
+   {
+    "w": "2026-10-12",
+    "health_status": "grey",
+    "n": 1
+   },
+   {
+    "w": "2026-10-19",
+    "health_status": "amber",
+    "n": 2
+   },
+   {
+    "w": "2026-10-19",
+    "health_status": "green",
+    "n": 9
+   },
+   {
+    "w": "2026-10-19",
+    "health_status": "grey",
+    "n": 2
+   },
+   {
+    "w": "2026-10-26",
+    "health_status": "amber",
+    "n": 1
+   },
+   {
+    "w": "2026-10-26",
+    "health_status": "green",
+    "n": 11
+   },
+   {
+    "w": "2026-10-26",
+    "health_status": "grey",
+    "n": 1
+   },
+   {
+    "w": "2026-11-02",
+    "health_status": "green",
+    "n": 12
+   },
+   {
+    "w": "2026-11-02",
+    "health_status": "grey",
+    "n": 1
+   },
+   {
+    "w": "2026-11-02",
+    "health_status": "red",
+    "n": 1
+   },
+   {
+    "w": "2026-11-09",
+    "health_status": "green",
+    "n": 12
+   },
+   {
+    "w": "2026-11-09",
+    "health_status": "grey",
+    "n": 1
+   },
+   {
+    "w": "2026-11-09",
+    "health_status": "red",
+    "n": 1
+   },
+   {
+    "w": "2026-11-16",
+    "health_status": "amber",
+    "n": 1
+   },
+   {
+    "w": "2026-11-16",
+    "health_status": "green",
+    "n": 13
+   }
+  ]
+ },
+ "dbt": {
+  "status_counts": {
+   "pass": 62,
+   "success": 25,
+   "no-op": 4,
+   "warn": 2
+  },
+  "models": 23,
+  "data_tests": 62,
+  "unit_tests": 2,
+  "seeds": 2,
+  "exposures": 4,
+  "sources": 8,
+  "incremental_models": [
+   "fct_accuracy_daily"
+  ],
+  "elapsed_s": 93.7
+ },
+ "monitoring": {
+  "event_1": {
+   "detected": true,
+   "first_alert": "2026-09-26",
+   "delay_days": 3,
+   "alerting_series": 3
+  },
+  "event_2": {
+   "detected": true,
+   "first_alert": "2026-09-15",
+   "delay_days": 1,
+   "alerting_series": 5
+  },
+  "event_5": {
+   "detected": true,
+   "alerts": 12,
+   "robot_wave_volume_alerts": 0,
+   "false_volume_alerts": 1
+  },
+  "event_6": {
+   "detected": true,
+   "first_alert": "2026-11-05",
+   "false_bot_alerts": 0
+  },
+  "event_8": {
+   "naive_global_signal_days_after_start": 35,
+   "naive_global_signal_days_before_start": 1,
+   "standardized_signal_days_after_start": 0,
+   "segment_alerts_after_start_excluding_events_1_2": 2
+  },
+  "segment_alerts": {
+   "alert_days_total": 46,
+   "true_alert_days": 44,
+   "precision": 0.957,
+   "false_alert_days_per_week": 0.15,
+   "recall_events_1_2": 1.0
+  },
+  "recall_events_1_2_5_6": 1.0,
+  "false_alerts_per_week_all_monitors": 0.23,
+  "phi": {
+   "customer_segment_fp": 1.261,
+   "customer_segment_fn": 1.07,
+   "platform_segment_fp": 1.885,
+   "platform_segment_fn": 1.168
+  },
+  "parameters": {
+   "fdr": 0.01,
+   "min_control_events": 30,
+   "min_expected_count": 3.0,
+   "consecutive_days": 2,
+   "reference_days": 28
+  },
+  "wikimedia_alert_days": [
+   "2025-07-25",
+   "2025-07-26",
+   "2025-07-27"
+  ]
+ }
+}

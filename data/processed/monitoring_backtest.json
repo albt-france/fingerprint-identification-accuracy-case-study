@@ -1,0 +1,58 @@
+{
+  "event_1": {
+    "detected": true,
+    "first_alert": "2026-09-26",
+    "delay_days": 3,
+    "alerting_series": 3
+  },
+  "event_2": {
+    "detected": true,
+    "first_alert": "2026-09-15",
+    "delay_days": 1,
+    "alerting_series": 5
+  },
+  "event_5": {
+    "detected": true,
+    "alerts": 12,
+    "robot_wave_volume_alerts": 0,
+    "false_volume_alerts": 1
+  },
+  "event_6": {
+    "detected": true,
+    "first_alert": "2026-11-05",
+    "false_bot_alerts": 0
+  },
+  "event_8": {
+    "naive_global_signal_days_after_start": 35,
+    "naive_global_signal_days_before_start": 1,
+    "standardized_signal_days_after_start": 0,
+    "segment_alerts_after_start_excluding_events_1_2": 2
+  },
+  "segment_alerts": {
+    "alert_days_total": 46,
+    "true_alert_days": 44,
+    "precision": 0.957,
+    "false_alert_days_per_week": 0.15,
+    "recall_events_1_2": 1.0
+  },
+  "recall_events_1_2_5_6": 1.0,
+  "false_alerts_per_week_all_monitors": 0.23,
+  "phi": {
+    "customer_segment_fp": 1.261,
+    "customer_segment_fn": 1.07,
+    "platform_segment_fp": 1.885,
+    "platform_segment_fn": 1.168
+  },
+  "parameters": {
+    "fdr": 0.01,
+    "min_control_events": 30,
+    "min_expected_count": 3.0,
+    "consecutive_days": 2,
+    "reference_days": 28
+  },
+  "wikimedia_alert_days": [
+    "2025-07-25",
+    "2025-07-26",
+    "2025-07-27"
+  ]
+}

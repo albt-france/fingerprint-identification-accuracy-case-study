@@ -1,0 +1,243 @@
+version: 2
+
+models:
+  - name: stg_identification_events
+    description: >
+      SIMULATED. One row per identification request, deduplicated on event_id (first load wins), UTC dates, rows
+      loaded after var('as_of') hidden. Base of every accuracy model.
+    columns:
+      - name: event_id
+        description: Identifier of the identification request (unique after deduplication).
+        data_tests: [unique, not_null]
+      - name: ts_utc
+        description: Time of the request, UTC.
+        data_tests: [not_null]
+      - name: event_date
+        description: UTC day of the request (customers may count in local time).
+        data_tests: [not_null]
+      - name: customer_id
+        description: Fictional customer (C01..C12) or prospect (P01, P02).
+        data_tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+      - name: visitor_id
+        description: Visitor identifier returned by the simulated platform (simulated, format V + 12 hex).
+        data_tests: [not_null]
+      - name: visitor_found
+        description: True when the returned visitor had been seen before by the platform.
+      - name: confidence_score
+        description: >
+          Confidence of the answer = 1 - estimated probability of a false positive (Fingerprint's definition);
+          1.0 for a new visitor. Says nothing about false negatives.
+      - name: method
+        description: deterministic (cookie-like signal available) or probabilistic (attributes only).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['deterministic', 'probabilistic']
+      - name: is_control
+        description: True for deterministic events, i.e. the control set of the accuracy experiment.
+      - name: probabilistic_visitor_id
+        description: For control events only, the answer the platform gives WITHOUT the deterministic signal (test set).
+      - name: probabilistic_visitor_found
+        description: For control events only, whether the test-set answer is an existing visitor.
+      - name: browser
+        description: Browser family (Chrome, Edge, Firefox, Safari, Chrome Mobile, Mobile Safari, Samsung Internet, Native iOS, Native Android).
+        data_tests: [not_null]
+      - name: browser_major
+        description: Major version of the browser (iOS major for Safari and iOS apps).
+      - name: os
+        description: Operating system.
+      - name: os_major
+        description: iOS major version for Apple mobile traffic, 0 otherwise.
+      - name: device_type
+        description: desktop, mobile or tablet.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['desktop', 'mobile', 'tablet']
+      - name: is_incognito
+        description: Private browsing detected (no cookie, so never in the control set).
+      - name: is_vpn
+        description: Request coming through a VPN.
+      - name: bot_result
+        description: Robot detection result.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['good', 'bad', 'notDetected']
+      - name: is_bad_bot
+        description: bot_result = 'bad'. Excluded from the standard accuracy rates and reported separately.
+      - name: ip_hash
+        description: Hash of the simulated /24 network. Never published.
+      - name: country
+        description: Country of the request (simulated).
+      - name: sdk
+        description: js (web), ios or android (native apps).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['js', 'ios', 'android']
+      - name: sdk_version
+        description: Version of the (fictional) client library.
+      - name: proxy_integration
+        description: Whether the customer routes requests through its own domain; without it, ad blockers block part of the requests.
+      - name: linked_id
+        description: Account id sent by the customer with the request (often empty); used for customer-specific metrics.
+      - name: loaded_at
+        description: When the row was loaded (first load if the row was re-sent).
+
+  - name: stg_device_truth
+    description: SIMULATION ONLY. Hidden true device of each event.
+    columns:
+      - name: event_id
+        description: Identifier of the identification request.
+        data_tests: [unique, not_null]
+      - name: true_device_id
+        description: True device (simulated, D + customer + number).
+      - name: true_visitor_id
+        description: The visitor id the platform should return for this device.
+      - name: device_seen_before
+        description: True when the device had visited the customer before this event.
+      - name: true_is_internal_agent
+        description: True for the call-centre agent devices of C07 (to validate the inference in int_internal_traffic).
+      - name: true_is_bad_bot
+        description: True for simulated bad robots.
+
+  - name: stg_customers
+    description: SIMULATED fictional customers and prospects.
+    columns:
+      - name: customer_id
+        description: C01..C12, P01, P02.
+        data_tests: [unique, not_null]
+      - name: sector
+        description: Industry of the fictional customer.
+      - name: use_case
+        description: Main use of identification (account takeover, payment fraud, promo abuse, paywall...).
+      - name: plan
+        description: Pro, Enterprise or POC.
+      - name: region
+        description: EU, US, APAC or LATAM.
+      - name: csm_pod
+        description: Customer Success pod in charge (POD-A..POD-C).
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['POD-A', 'POD-B', 'POD-C']
+      - name: start_date
+        description: Go-live date on the simulated platform.
+      - name: confidence_threshold
+        description: Threshold under which the customer asks for an extra step (for example a one-time code).
+      - name: arr_usd_simulated
+        description: Simulated annual recurring revenue in USD (0 for prospects).
+      - name: timezone
+        description: Time zone the customer reports in.
+      - name: proxy_integration
+        description: Whether the customer uses a proxy integration.
+      - name: linked_id_share
+        description: Share of requests that carry an account id.
+      - name: is_prospect
+        description: True for POC prospects.
+
+  - name: stg_browser_releases
+    description: REAL release calendar, one row per browser and major version (first stable release).
+    columns:
+      - name: release_family
+        description: Chrome, Firefox or iOS.
+      - name: major
+        description: Major version.
+      - name: release_date
+        description: Date of the first stable release (Chromium Dash, Mozilla product-details, endoflife.date).
+        data_tests: [not_null]
+      - name: first_stable_build
+        description: Build number of that first release.
+      - name: source
+        description: Public source of the row.
+    data_tests:
+      - unique_combination:
+          arguments:
+            columns: ['release_family', 'major']
+
+  - name: stg_hits
+    description: REAL ClickBench rows (local files hits_0..hits_4), dates converted, UserID = 0 removed.
+    columns:
+      - name: counter_id
+        description: Site (CounterID).
+      - name: user_id
+        description: First-party cookie of the analytics service, used as ground truth of the replay.
+      - name: watch_id
+        description: Event identifier, used to break ties in the ordering.
+      - name: event_date
+        description: Day of the event (converted from days since 1970).
+      - name: event_time
+        description: Time of the event (converted from seconds since 1970).
+      - name: event_time_s
+        description: Time of the event in seconds since 1970 (kept for exact ordering).
+      - name: robotness
+        description: Robot flag of the analytics service (> 0 = robot).
+      - name: is_mobile
+        description: Mobile flag.
+
+  - name: stg_ingestion_log
+    description: SIMULATED loader log, one row per day partition and customer.
+    columns:
+      - name: partition_date
+        description: Day of the partition.
+        data_tests: [not_null]
+      - name: customer_id
+        description: Customer of the file.
+      - name: rows_sent
+        description: Rows the source system says it sent (unique events).
+      - name: rows_loaded
+        description: Rows actually loaded (includes re-sent duplicates).
+      - name: loaded_at
+        description: Load time of the partition.
+
+  - name: stg_model_releases
+    description: SIMULATED releases of the fictional identification model.
+    columns:
+      - name: model_version
+        description: Version name.
+        data_tests: [unique, not_null]
+      - name: release_date
+        description: Release date.
+      - name: change
+        description: What changed.
+      - name: segment
+        description: Segment targeted by the change, if any.
+
+  - name: stg_request_queue
+    description: SIMULATED internal requests to the accuracy analyst.
+    columns:
+      - name: request_id
+        description: REQ-001..REQ-140.
+        data_tests: [unique, not_null]
+      - name: opened_at
+        description: When the request was opened.
+      - name: resolved_at
+        description: When it was resolved (empty if still open).
+      - name: requesting_team
+        description: CS (Customer Success), SE (Sales Engineering) or Product.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['CS', 'SE', 'Product']
+      - name: request_type
+        description: false_positive, false_negative, report, reconciliation, poc or method_question.
+      - name: question_template
+        description: Kind of question (standard question, trend, investigation, custom metric, report, POC report, method, reconciliation).
+      - name: customer_id
+        description: Customer concerned (empty for platform-wide questions).
+      - name: arr_at_stake_usd
+        description: Simulated ARR of that customer.
+      - name: urgency
+        description: low, medium, high or critical.
+      - name: effort_hours
+        description: Analyst time spent.
+      - name: title
+        description: Short description of the request.
+      - name: linked_hidden_event
+        description: True when the request is the symptom of one of the 8 hidden simulated events.

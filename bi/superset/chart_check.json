@@ -1,0 +1,22 @@
+{
+ "SIMULATED \u00b7 Platform FP rate: crude vs constant mix vs stable cohort": {
+  "status": 200,
+  "rows": 13,
+  "error": null
+ },
+ "SIMULATED \u00b7 Customer health, latest week": {
+  "status": 200,
+  "rows": 14,
+  "error": null
+ },
+ "SIMULATED \u00b7 Requests by priority and team": {
+  "status": 200,
+  "rows": 12,
+  "error": null
+ },
+ "SIMULATED \u00b7 Requests a self-service tool can answer": {
+  "status": 200,
+  "rows": 1,
+  "error": null
+ }
+}

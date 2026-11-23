@@ -1,0 +1,9 @@
+{
+  "builds_in_feed": 200,
+  "milestone_equals_version_major": true,
+  "repeated_version_strings": 0,
+  "first_build": "145.0.7632.161",
+  "last_build": "159.0.8154.13",
+  "first_build_dates_increase_with_milestone": true,
+  "oldest_milestone_dropped_as_incomplete": 145
+}

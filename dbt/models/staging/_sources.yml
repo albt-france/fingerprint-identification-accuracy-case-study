@@ -1,0 +1,69 @@
+version: 2
+
+sources:
+  - name: sim
+    description: >
+      SIMULATED identification platform (src/simulate_platform.py, seed 42). Fictional platform and customers
+      (C01..C12, prospects P01, P02); never Fingerprint data. Parquet files under data/sim/.
+    tables:
+      - name: identification_events
+        description: >
+          One row per identification request answered by the simulated platform, partitioned by event_date
+          (one folder per day, one file per customer). Loaded once a day by a batch: re-sent rows and late
+          partitions happen (see docs/data_issues_log.md).
+        config:
+          external_location: "read_parquet('../data/sim/identification_events/*/*.parquet', hive_partitioning = true, union_by_name = true)"
+          loaded_at_field: loaded_at
+          freshness:
+            warn_after: {count: 1, period: day}
+            error_after: {count: 2, period: day}
+        columns:
+          - name: event_id
+            description: Identifier of the identification request. Should be unique; re-sent batches duplicate it.
+            data_tests:
+              - not_null
+              - unique:
+                  config:
+                    severity: warn   # known incident: C05 rows re-sent on 2026-10-27; staging deduplicates
+          - name: loaded_at
+            description: When the batch that carried the row was loaded into the warehouse (UTC).
+            data_tests:
+              - not_null
+      - name: device_truth
+        description: >
+          HIDDEN TRUTH, simulation only: the true device behind each event. A real platform never has this table;
+          it exists here to measure how biased the Fingerprint-style measurement is.
+        config:
+          external_location: "read_parquet('../data/sim/device_truth/*/*.parquet', hive_partitioning = true)"
+      - name: customers
+        description: Fictional customers and prospects with their settings (confidence threshold, CSM pod, simulated ARR).
+        config:
+          external_location: "read_parquet('../data/sim/customers.parquet')"
+      - name: ingestion_log
+        description: One row per daily partition and customer as reported by the loader (rows sent by the source, rows loaded, load time).
+        config:
+          external_location: "read_parquet('../data/sim/ingestion_log.parquet')"
+      - name: model_releases
+        description: Releases of the fictional identification model (date and change).
+        config:
+          external_location: "read_parquet('../data/sim/model_releases.parquet')"
+      - name: request_queue
+        description: 140 internal requests sent to the accuracy analyst by Customer Success, Sales Engineering and Product.
+        config:
+          external_location: "read_parquet('../data/sim/request_queue.parquet')"
+      - name: browser_releases
+        description: >
+          REAL browser release calendar (Chrome first stable build per milestone from Chromium Dash, Firefox major
+          releases from Mozilla product-details, iOS from endoflife.date), copied by the simulation.
+        config:
+          external_location: "read_parquet('../data/sim/browser_releases.parquet')"
+
+  - name: public
+    description: REAL public data (ClickBench hits, anonymised 2013 web-analytics traffic, CC BY-NC-SA 4.0).
+    tables:
+      - name: hits
+        description: >
+          Local copy of ClickBench files hits_0..hits_4 (5,000,000 rows). Values are obfuscated: only equality between
+          values is meaningful. EventDate is stored as days since 1970-01-01, EventTime as seconds since 1970.
+        config:
+          external_location: "read_parquet('../data/raw/hits_*.parquet')"

@@ -1,0 +1,36 @@
+name: fingerprint_accuracy
+version: "1.0.0"
+config-version: 2
+profile: fingerprint_accuracy
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+analysis-paths: ["analyses"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+vars:
+  # Load-time cut-off: only rows loaded at or before this timestamp are visible. The default sees everything;
+  # src/incremental_replay.py moves it day by day to show how the incremental model absorbs late data.
+  as_of: "2099-01-01 00:00:00"
+  lookback_days: 3          # incremental window re-processed on every run (late partitions, re-sent rows)
+  window_start: "2026-08-24"
+  window_end: "2026-11-22"
+  overdispersion_phi: 2.0   # quasi-binomial variance inflation used by the SQL screens (estimated in src/monitoring.py)
+
+models:
+  fingerprint_accuracy:
+    staging:
+      # tables, not views: a DuckDB view keeps the relative path of its Parquet source, so a tool opening the
+      # database from another folder could not resolve it (stg_hits stays a view: only dbt reads it)
+      +materialized: table
+    intermediate:
+      +materialized: table
+    marts:
+      +materialized: table
+
+seeds:
+  fingerprint_accuracy:
+    +quote_columns: false

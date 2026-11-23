@@ -1,0 +1,62 @@
+{
+  "read_on": "2026-11-23",
+  "job": {
+    "title": "Data Analyst, Identification Accuracy ",
+    "requisition_id": "ENG27-15",
+    "location": "Remote",
+    "department": "Engineering",
+    "first_published": "2026-11-20T14:58:17-05:00",
+    "updated_at": "2026-11-20T15:00:25-05:00",
+    "url": "https://fingerprint.com/careers/jobs/apply/?gh_jid=6266169004",
+    "api": "https://boards-api.greenhouse.io/v1/boards/fingerprint/jobs/6266169004",
+    "requests_per_month_as_stated": "1 billion",
+    "us_salary_range_usd_k": [
+      115,
+      155
+    ],
+    "years_experience_required": "3+",
+    "on_call": true
+  },
+  "careers": {
+    "open_roles": 20,
+    "all_remote": true,
+    "titles": [
+      "Business Operations Associate",
+      "Data Analyst, Identification Accuracy ",
+      "Design Engineer",
+      "Engineering Manager, Automation Intelligence",
+      "Enterprise Account Executive ",
+      "Manager, Customer Success Managers - EMEA",
+      "Senior Data Platform Engineer",
+      "Senior Data Scientist",
+      "Senior Engineer, Identification",
+      "Senior Infrastructure Engineer",
+      "Senior Performance Marketing Manager ",
+      "Senior Recruiter",
+      "Senior Revenue Operations Manager (Marketing Ops)",
+      "Senior Site Reliability Engineer",
+      "Software Architect",
+      "Solutions Engineer - India",
+      "Staff Site Reliability Engineer",
+      "Strategic Customer Success Engineer - US",
+      "Strategic Implementation Engineer - US",
+      "Technical Product Manager, Identification & JS Agent"
+    ]
+  },
+  "oss_repo": {
+    "name": "fingerprintjs/fingerprintjs",
+    "stars": 28790,
+    "forks": 2643,
+    "license": "MIT",
+    "releases": 69,
+    "first_release": "2015-08-02",
+    "latest_release": "v5.3.0",
+    "latest_release_date": "2026-10-07",
+    "releases_last_12_months": 3
+  },
+  "docs_read": {
+    "accuracy": "https://docs.fingerprint.com/docs/identification-accuracy-and-confidence",
+    "linked_id": "https://docs.fingerprint.com/docs/identify-visitors",
+    "mcp_server": "https://docs.fingerprint.com/ai/mcp-server"
+  }
+}
